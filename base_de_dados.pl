@@ -1,31 +1,35 @@
-/*refeição(restaurante, tipo_de_alimentação(1,2,3), localização, classificacao, preço_medio_p_pessoa, take_away, entrega, empresa_entrega, custo_entrega)*/
+/*refeicao(restaurante, tipo_de_alimentação(1,2,3), localização, classificacao, preço_medio_p_pessoa, take_away, entrega, empresa_entrega(1,2), custo_entrega)*/
 
-refeição('As Manas',[Portuguesa],'','Sim',
-refeição('Bibó Porto',[Portuguesa, Churrasco],'','',
-refeição('BiclaBurgers',[Hambúrgueres],'4.8','',
-refeição('Big Bobs',[Pizza, FastFood,Italiana],'4.5','',
-refeição('Bira dos Namorados',[Hambúrgueres],'4.7','',
-refeição('BLB',[Sanduíches],'','',
-refeição('Bracara Augusta',[Portuguesa],'','',
-refeição('Braga999',[Japonesa],'','Sim',
-refeição('BurgerKing',[FastFood,Hambúrgueres,Americana],'4.5','Sim',
-refeição('Café do Luís',[Hambúrgueres, Sanduíches],'4.8','',
-refeição('Café Vianna',[Portuguesa],'4.5','',
-refeição('Caffé Italy',[Pizza, Italiana, Massa],'4.2','',
-refeição('Casa da Coxinha',[Latino-Americana],'','',
-refeição('Casa Salgado', [Portuguesa], '', '',
-refeição('Celeste', [Pizza], '', 'Sim',
-refeição('Churrasqueira da Central', [Churrasco], '', 'Sim',
-refeição('Churrasqueira Luanda', [Churrasco], '', 'Sim',
-refeição('Churrasqueira Oliveira', [Churrasco], '', 'Sim',
-refeição('Dgema', [Hambúrgueres], '4.6', 'Sim',
-refeição('Docamar', [Marisco], '4.6', 'Sim',
-refeição('Eat Fit',[Saudável, Vegetariana, Saladas],'4.8','',
-refeição('Foz',[Churrasco],'','',
-refeição('Frigideiras da Sé',[Portuguesa],'','',
-refeição('Grelhados Maravilha',[Churrasco],'','Sim',
+refeicao('As Manas',[Portuguesa],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Baixo')
+refeicao('Bibó Porto',[Portuguesa, Churrasco],'Braga','Muito Bom','Médio','Não','Sim',[Glovo],'Médio')
+refeicao('BiclaBurgers',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio')
+refeicao('Big Bobs',[Pizza,Italiana],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio')
+refeicao('Bira dos Namorados',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio')
+refeicao('BLB',[Sanduíches],'Braga','Muito Bom','Acessível','Não', 'Sim',[Glovo],'Médio')
+refeicao('Bracara Augusta',[Portuguesa],'Braga','Muito Bom','Médio','Não', 'Sim',[Glovo],'Médio')
+refeicao('Braga999',[Japonesa, Sushi],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio')
+refeicao('BurgerKing',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats,Glovo], 'Médio')
+refeicao('Formigas', [Portuguesa, Sushi, Japonesa], 'Guimarães', 'Muito Bom','Médio', 'Sim','Sim',[UberEats,Glovo],'Médio')
+refeicao('Café do Luís',[Hambúrgueres, Sanduíches],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio')
+refeicao('Café Vianna',[Portuguesa],'Braga','Muito Bom','Médio','Sim','Sim',[UberEats],'Médio')
+refeicao('Caffé Italy',[Pizza, Italiana, Massa],'Braga','Muito Bom','Médio','Sim','Sim',[UberEats,Glovo],'Médio')
+refeicao('Pizzaria Luzzo'), [Pizza, Italiana], 'Guimarães', 'Muito Bom','Médio','Sim','Sim',[UberEats,Glovo],'Médio')
+refeicao('Casa da Coxinha',[Latino-Americana],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio')
+refeicao('Casa Salgado', [Portuguesa], 'Braga', 'Muito Bom','Acessível','Não', 'Sim',[Glovo],'Médio')
+refeicao('Celeste', [Pizza], 'Braga', 'Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio')
+refeicao('Churrasqueira da Central', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio')
+refeicao('Churrasqueira Luanda', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio')
+refeicao('Churrasqueira Oliveira', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio')
+
+
+refeicao('Dgema', [Hambúrgueres], '4.6', 'Sim',
+refeicao('Docamar', [Marisco], '4.6', 'Sim',
+refeicao('Eat Fit',[Saudável, Vegetariana, Saladas],'4.8','',
+refeicao('Foz',[Churrasco],'','',
+refeicao('Frigideiras da Sé',[Portuguesa],'','',
+refeicao('Grelhados Maravilha',[Churrasco],'','Sim',
 refeição('Gulbenkian Francesinhas',[Portuguesa],'','Sim',
-refeição('Habanero',[Mexicana],'4.2','',
+refeicao('Habanero',[Mexicana],'4.2','',
 refeição('Hanami Sushi',[Sushi, Japonesa],'4.6','',
 refeição('Il Fiume',[Italiana, Pizza, Massa],'4.6','',
 refeição('Il Fiume',[Italiana],'4.6','',
