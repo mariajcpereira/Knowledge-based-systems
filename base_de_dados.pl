@@ -20,21 +20,23 @@ refeicao('Celeste', [Pizza], 'Braga', 'Muito Bom','Acessivel','Sim','Sim',[Glovo
 refeicao('Churrasqueira da Central', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
 refeicao('Churrasqueira Luanda', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
 refeicao('Churrasqueira Oliveira', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
-
-
-refeicao('Dgema', [Hambúrgueres], '4.6', 'Sim',
-refeicao('Docamar', [Marisco], '4.6', 'Sim',
-refeicao('Eat Fit',[Saudável, Vegetariana, Saladas],'4.8','',
-refeicao('Foz',[Churrasco],'','',
-refeicao('Frigideiras da Sé',[Portuguesa],'','',
-refeicao('Grelhados Maravilha',[Churrasco],'','Sim',
-refeição('Gulbenkian Francesinhas',[Portuguesa],'','Sim',
-refeicao('Habanero',[Mexicana],'4.2','',
-refeição('Hanami Sushi',[Sushi, Japonesa],'4.6','',
-refeição('Il Fiume',[Italiana, Pizza, Massa],'4.6','',
-refeição('Il Fiume',[Italiana],'4.6','',
-refeição('Indian Tandoori',[Indiana],'','',
-refeição('La Porta',[Italiana],'4.6','',
-refeição('Leitaria da Quinta do Paço',[Sobremesas],'4.9','',
-refeição('McDonalds',[Hambúrgueres, Americana],'4.6','Sim',
-refeição('McDonalds',[Hambúrgueres, ],'4.6','Sim',
+refeicao('Dgema', [Hamburgueres], 'Braga','Muito Bom', 'Acessivel','Nao','Sim',[UberEats],'Medio').
+refeicao('Docamar', [Marisco], 'Braga','Muito Bom', 'Medio','Nao','Sim',[Glovo],'Medio').
+refeicao('Eat Fit',[Saudável, Vegetariana],'Braga','Muito Bom', 'Medio','Nao','Sim',[UberEats],'Medio').
+refeicao('Foz',[Churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Frigideiras da Sé',[Portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Grelhados Maravilha',[Churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Gulbenkian Francesinhas',[Portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Habanero',[Mexicana],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[UberEats],'Medio').
+refeicao('Hanami Sushi',[Sushi, Japonesa],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[UberEats],'Medio').
+refeicao('Il Fiume',[Italiana, Pizza, Massa],'Braga','Muito Bom', 'Acessivel', 'Nao','Sim',[Glovo, UberEats],'Medio').
+refeicao('Indian Tandoori',[Indiana],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo],'Medio').
+refeicao('La Porta',[Italiana,Massa, Pizza],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo],'Medio').
+refeicao('McDonalds',[Hamburgueres],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo, UberEats],'Medio').
+refeicao('Mimos Smoke House',[Hamburgueres],'Braga','Excelente', 'Medio', 'Sim','Sim',[Glovo],'Medio').
+refeicao('Mr.Pizza',[Pizza, Italiana],'Braga','Muito Bom', 'Acessivel', 'Nao','Sim',[UberEats],'Medio').
+refeicao('Muteki',[Japonesa],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo],'Medio').
+refeicao('Nata Lisboa',[Portuguesa],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[UberEats],'Medio').
+refeicao('Nochas Tapas  Wine',[Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo],'Medio').
+refeicao('Nogueira Bar',[Portuguesa, Hamburgueres, Sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[Glovo],'Medio')
+refeicao('O Amor vive na Cozinha',[Saudável, Hamburgueres, Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Não','Sim',[UberEats],'Medio').
