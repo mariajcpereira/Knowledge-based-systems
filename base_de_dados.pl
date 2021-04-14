@@ -38,5 +38,5 @@ refeicao('Mr.Pizza',[Pizza, Italiana],'Braga','Muito Bom', 'Acessivel', 'Nao','S
 refeicao('Muteki',[Japonesa],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo],'Medio').
 refeicao('Nata Lisboa',[Portuguesa],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[UberEats],'Medio').
 refeicao('Nochas Tapas  Wine',[Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo],'Medio').
-refeicao('Nogueira Bar',[Portuguesa, Hamburgueres, Sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[Glovo],'Medio')
+refeicao('Nogueira Bar',[Portuguesa, Hamburgueres, Sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[Glovo],'Medio').
 refeicao('O Amor vive na Cozinha',[Saudável, Hamburgueres, Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Não','Sim',[UberEats],'Medio').
