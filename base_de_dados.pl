@@ -10,7 +10,7 @@ refeicao('Bracara Augusta',[Portuguesa],'Braga','Muito Bom','Medio','Nao', 'Sim'
 refeicao('Braga999',[Japonesa, Sushi],'Braga','Muito Bom','Acessivel','Sim','Sim',[Glovo],'Medio').
 refeicao('BurgerKing',[Hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats,Glovo], 'Medio').
 refeicao('Formigas', [Portuguesa, Sushi, Japonesa], 'Guimaraes', 'Muito Bom','Medio', 'Sim','Sim',[UberEats,Glovo],'Medio').
-refeicao('Cafe do Luis',[Hamburgueres, Sanduíches],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Médio').
+refeicao('Cafe do Luis',[Hamburgueres, Sanduíches],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Medio').
 refeicao('Cafe Vianna',[Portuguesa],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats],'Medio').
 refeicao('Caffe Italy',[Pizza, Italiana, Massa],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats,Glovo],'Medio').
 refeicao('Pizzaria Luzzo'), [Pizza, Italiana], 'Guimaraes', 'Muito Bom','Medio','Sim','Sim',[UberEats,Glovo],'Medio').
