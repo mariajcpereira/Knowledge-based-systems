@@ -1,25 +1,25 @@
 /*refeicao(restaurante, tipo_de_alimentação(1,2,3), localização, classificacao, preço_medio_p_pessoa, take_away, entrega, empresa_entrega(1,2), custo_entrega)*/
 
-refeicao('As Manas',[Portuguesa],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Baixo').
-refeicao('Bibó Porto',[Portuguesa, Churrasco],'Braga','Muito Bom','Médio','Não','Sim',[Glovo],'Médio').
-refeicao('BiclaBurgers',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio').
-refeicao('Big Bobs',[Pizza,Italiana],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio').
-refeicao('Bira dos Namorados',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio').
-refeicao('BLB',[Sanduíches],'Braga','Muito Bom','Acessível','Não', 'Sim',[Glovo],'Médio').
-refeicao('Bracara Augusta',[Portuguesa],'Braga','Muito Bom','Médio','Não', 'Sim',[Glovo],'Médio').
-refeicao('Braga999',[Japonesa, Sushi],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio').
-refeicao('BurgerKing',[Hambúrgueres],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats,Glovo], 'Médio').
-refeicao('Formigas', [Portuguesa, Sushi, Japonesa], 'Guimarães', 'Muito Bom','Médio', 'Sim','Sim',[UberEats,Glovo],'Médio').
-refeicao('Café do Luís',[Hambúrgueres, Sanduíches],'Braga','Muito Bom','Acessível','Sim','Sim',[UberEats],'Médio').
-refeicao('Café Vianna',[Portuguesa],'Braga','Muito Bom','Médio','Sim','Sim',[UberEats],'Médio').
-refeicao('Caffé Italy',[Pizza, Italiana, Massa],'Braga','Muito Bom','Médio','Sim','Sim',[UberEats,Glovo],'Médio').
-refeicao('Pizzaria Luzzo'), [Pizza, Italiana], 'Guimarães', 'Muito Bom','Médio','Sim','Sim',[UberEats,Glovo],'Médio').
-refeicao('Casa da Coxinha',[Latino-Americana],'Braga','Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio').
-refeicao('Casa Salgado', [Portuguesa], 'Braga', 'Muito Bom','Acessível','Não', 'Sim',[Glovo],'Médio').
-refeicao('Celeste', [Pizza], 'Braga', 'Muito Bom','Acessível','Sim','Sim',[Glovo],'Médio').
-refeicao('Churrasqueira da Central', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio').
-refeicao('Churrasqueira Luanda', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio').
-refeicao('Churrasqueira Oliveira', [Churrasco], 'Braga', 'Muito Bom','Médio','Sim','Sim',[Glovo],'Médio').
+refeicao('As Manas',[Portuguesa],'Braga','Muito Bom','Acessivel','Sim','Sim',[Glovo],'Baixo').
+refeicao('Bibo Porto',[Portuguesa, Churrasco],'Braga','Muito Bom','Medio','Nao','Sim',[Glovo],'Medio').
+refeicao('BiclaBurgers',[Hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Medio').
+refeicao('Big Bobs',[Pizza,Italiana],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Medio').
+refeicao('Bira dos Namorados',[Hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Medio').
+refeicao('BLB',[Sanduiches],'Braga','Muito Bom','Acessivel','Nao', 'Sim',[Glovo],'Medio').
+refeicao('Bracara Augusta',[Portuguesa],'Braga','Muito Bom','Medio','Nao', 'Sim',[Glovo],'Medio').
+refeicao('Braga999',[Japonesa, Sushi],'Braga','Muito Bom','Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('BurgerKing',[Hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats,Glovo], 'Medio').
+refeicao('Formigas', [Portuguesa, Sushi, Japonesa], 'Guimaraes', 'Muito Bom','Medio', 'Sim','Sim',[UberEats,Glovo],'Medio').
+refeicao('Cafe do Luis',[Hamburgueres, Sanduíches],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats],'Médio').
+refeicao('Cafe Vianna',[Portuguesa],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats],'Medio').
+refeicao('Caffe Italy',[Pizza, Italiana, Massa],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats,Glovo],'Medio').
+refeicao('Pizzaria Luzzo'), [Pizza, Italiana], 'Guimaraes', 'Muito Bom','Medio','Sim','Sim',[UberEats,Glovo],'Medio').
+refeicao('Casa da Coxinha',[Latino-Americana],'Braga','Muito Bom','Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Casa Salgado', [Portuguesa], 'Braga', 'Muito Bom','Acessivel','Nao', 'Sim',[Glovo],'Medio').
+refeicao('Celeste', [Pizza], 'Braga', 'Muito Bom','Acessivel','Sim','Sim',[Glovo],'Medio').
+refeicao('Churrasqueira da Central', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
+refeicao('Churrasqueira Luanda', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
+refeicao('Churrasqueira Oliveira', [Churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo],'Medio').
 
 
 refeicao('Dgema', [Hambúrgueres], '4.6', 'Sim',
