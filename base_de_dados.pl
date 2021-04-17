@@ -37,3 +37,24 @@ restaurante('Nata Lisboa',[Portuguesa],'Braga','Excelente', 'Acessivel', 'Sim','
 restaurante('Nochas Tapas  Wine',[Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo], medio).
 restaurante('Nogueira Bar',[Portuguesa, Hamburgueres, Sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[Glovo], medio).
 restaurante('O Amor vive na Cozinha',[Saudável, Hamburgueres, Sanduiches],'Braga','Muito Bom', 'Acessivel', 'Não','Sim',[UberEats], medio).
+restaurante('O Filho da Mãe',[mexicana],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
+restaurante('Oubela',[portugesa, pizza],'braga', 'acessivel', 'sim','sim',[ubereats], medio).
+restaurante('Pastelaria JP',[portugesa],'braga', 'acessivel', 'sim','sim',[glovo], baixo).
+restaurante('Pause Café',[sanduiches],'braga', 'acessivel', 'sim','sim',[glovo], medio).
+restaurante('Pizza di Mestre',[italiana, pizza],'braga', 'acessivel', 'sim','sim',[glovo], baixo).
+restaurante('Pizza Hut',[pizza],'braga', 'medio', 'sim','sim',[ubereats], medio).
+restaurante('Rotações',[pizza],'braga', 'acessivel', 'sim','sim',[glovo], medio).
+restaurante('Sandes Braga',[sanduiches],'braga', 'acessivel', 'sim','sim',[glovo], medio).
+restaurante('SANNO',[saudavel],'braga', 'acessivel', 'sim','sim',[ubereats, glovo], medio).
+restaurante('Semente Art Coffee & Plant Based',[saudavel, hamburgueres],'braga', 'acessivel', 'nao','sim',[ubereats], medio).
+restaurante('Shakai',[sushi, japonesa],'braga', 'acessivel', 'sim','sim',[ubereats], medio).
+restaurante('Sushi em tua casa',[sushi, japonesa],'braga', 'medio', 'sim','sim',[ubereats], medio).
+restaurante('Sushi&Co',[sushi, japonesa],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
+restaurante('Taberna Londrina',[portuguesa],'guimaraes', 'medio', 'sim','sim',[ubereats, glovo], medio).
+restaurante('Taquería El Cascabel',[mexicana],'braga', 'acessivel', 'nao','sim',[ubereats], medio).
+restaurante('Telepizza',[pizza],'braga', 'acessivel', 'nao','sim',[ubereats, glovo], medio).
+restaurante('Temple San',[sushi, japonesa],'braga', 'medio', 'sim','sim',[ubereats], medio).
+restaurante('Tia Isabel',[portuguesa],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
+restaurante('Tourigalo',[portuguesa, churrasco],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
+restaurante('ViaBracara',[portuguesa],'braga', 'acessivel', 'nao','sim',[ubereats, glovo], medio).
+restaurante('Cachorrão',[hamburgueres, sanduiches],'guimaraes', 'acessivel', 'nao','sim',[ubereats], medio).
