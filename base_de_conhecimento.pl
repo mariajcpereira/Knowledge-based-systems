@@ -1,26 +1,17 @@
 %Perfis
 
-if Portuguesa and    then 1.
-if   and    then 2.
-if   and    then 3.
-if   and    then 4.
-if   and    then 5.
-if   and    then 6.
-if   and    then 7.
-if   and    then 8.
-if   and    then 9.
-if   and    then 10.
-if   and    then 11.
-if   and    then 12.
-if   and    then 13.
-if   and    then 14.
-if   and    then 15.
-if   and    then 16.
-if   and    then 17.
-if   and    then 18.
-if   and    then 19.
-if   and    then 20.
-if   and    then 21.
-if   and    then 22.
-if   and    then 23.
-if   and    then 24.
+if guimaraes and sim then 1.
+if acessivel and gratuito then 2.
+if sushi and braga and sim then 3.
+if hamburgueres and guimaraes then 4.
+if italiana and braga and sim then 5.
+if pizza and guimaraes and sim then 6.
+if japonesa and ubereats and medio then 7.
+if braga and acessivel and ubereats then 8.
+if mexicana and ubereats and medio then 9.
+if hamburgueres and acessivel and sim then 10.
+if churrasco and braga and glovo and medio then 11.
+if hamburgueres and braga and acessivel and medio then 12.
+if portuguesa and braga and medio and glovo and medio then 13.
+if portuguesa and guimaraes and sim and ubereats and medio then 14.
+if saudavel and braga and acessível and sim and ubereats and medio then 15.
