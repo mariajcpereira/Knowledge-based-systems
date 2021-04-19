@@ -1,42 +1,42 @@
 /*restaurante(nome_restaurante, tipo_de_alimentação(1,2,3), localização, classificacao, preço_medio_p_pessoa, take_away, entrega, empresa_entrega(1,2), custo_entrega)*/
 
-restaurante('As Manas', [portuguesa], braga, 'Muito Bom', acessivel, sim, sim, [Glovo], baixo).
-restaurante('Bibo Porto', [portuguesa, churrasco], braga,'Muito Bom', medio, nao, sim,[Glovo], medio).
-restaurante('BiclaBurgers',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim', sim,[UberEats], medio).
-restaurante('Big Bobs',[pizza, italiana],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats], medio).
-restaurante('Bira dos Namorados',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats], medio).
-restaurante('BLB',[sanduiches],'Braga','Muito Bom','Acessivel', nao, sim,[Glovo], medio).
-restaurante('Bracara Augusta',[portuguesa],'Braga','Muito Bom','Medio', nao, sim, [Glovo], medio).
-restaurante('Braga999',[japonesa, sushi],'Braga','Muito Bom','Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('BurgerKing',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats,Glovo], medio).
-restaurante('Formigas', [portuguesa, sushi, japonesa], 'Guimaraes', 'Muito Bom','Medio', 'Sim','Sim',[UberEats,Glovo], medio).
-restaurante('Cafe do Luis',[hamburgueres, sanduiches],'Braga','Muito Bom','Acessivel','Sim','Sim',[UberEats], medio).
-restaurante('Cafe Vianna',[portuguesa],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats], medio).
-restaurante('Caffe Italy',[pizza, italiana],'Braga','Muito Bom','Medio','Sim','Sim',[UberEats,Glovo], medio).
-restaurante('Pizzaria Luzzo'), [pizza, italiana], 'Guimaraes', 'Muito Bom','Medio','Sim','Sim',[UberEats,Glovo], medio).
-restaurante('Casa Salgado', [portuguesa], 'Braga', 'Muito Bom','Acessivel', nao, sim, [Glovo], medio).
-restaurante('Celeste', [pizza], 'Braga', 'Muito Bom','Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('Churrasqueira da Central', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo], medio).
-restaurante('Churrasqueira Luanda', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo], medio).
-restaurante('Churrasqueira Oliveira', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[Glovo], medio).
-restaurante('Dgema', [hamburgueres], 'Braga','Muito Bom', 'Acessivel', nao, sim, [UberEats], medio).
-restaurante('Eat Fit',[saudável, vegetariana],'Braga','Muito Bom', 'Medio', nao, sim, [UberEats], medio).
-restaurante('Foz',[churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('Frigideiras da Sé',[portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('Grelhados Maravilha',[churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('Gulbenkian Francesinhas',[portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[Glovo], medio).
-restaurante('Habanero',[mexicana],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[UberEats], medio).
-restaurante('Hanami Sushi',[sushi, japonesa],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[UberEats], medio).
-restaurante('Il Fiume',[italiana, pizza],'Braga','Muito Bom', 'Acessivel', nao, sim, [Glovo, UberEats], medio).
-restaurante('La Porta',[italiana, pizza],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo], medio).
-restaurante('McDonalds',[hamburgueres],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo, UberEats], medio).
-restaurante('Mimos Smoke House',[hamburgueres],'Braga','Excelente', 'Medio', 'Sim','Sim',[Glovo], medio).
-restaurante('Mr.Pizza',[pizza, italiana],'Braga','Muito Bom', 'Acessivel', , nao, sim, [UberEats], medio).
-restaurante('Muteki',[japonesa],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[Glovo], medio).
-restaurante('Nata Lisboa',[portuguesa],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[UberEats], medio).
-restaurante('Nochas Tapas  Wine',[sanduiches],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[Glovo], medio).
-restaurante('Nogueira Bar',[portuguesa, hamburgueres, sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[Glovo], medio).
-restaurante('O Amor vive na Cozinha',[saudável, hamburgueres, sanduiches],'Braga','Muito Bom', 'Acessivel', 'Não','Sim',[UberEats], medio).
+restaurante('As Manas', [portuguesa], braga, 'Muito Bom', acessivel, sim, sim, [glovo], baixo).
+restaurante('Bibo Porto', [portuguesa, churrasco], braga,'Muito Bom', medio, nao, sim,[glovo], medio).
+restaurante('BiclaBurgers',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim', sim,[ubereats], medio).
+restaurante('Big Bobs',[pizza, italiana],'Braga','Muito Bom','Acessivel','Sim','Sim',[ubereats], medio).
+restaurante('Bira dos Namorados',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[ubereats], medio).
+restaurante('BLB',[sanduiches],'Braga','Muito Bom','Acessivel', nao, sim,[glovo], medio).
+restaurante('Bracara Augusta',[portuguesa],'Braga','Muito Bom','Medio', nao, sim, [glovo], medio).
+restaurante('Braga999',[japonesa, sushi],'Braga','Muito Bom','Acessivel','Sim','Sim',[glovo], medio).
+restaurante('BurgerKing',[hamburgueres],'Braga','Muito Bom','Acessivel','Sim','Sim',[ubereats,glovo], medio).
+restaurante('Formigas', [portuguesa, sushi, japonesa], 'Guimaraes', 'Muito Bom','Medio', 'Sim','Sim',[ubereats,glovo], medio).
+restaurante('Cafe do Luis',[hamburgueres, sanduiches],'Braga','Muito Bom','Acessivel','Sim','Sim',[ubereats], medio).
+restaurante('Cafe Vianna',[portuguesa],'Braga','Muito Bom','Medio','Sim','Sim',[ubereats], medio).
+restaurante('Caffe Italy',[pizza, italiana],'Braga','Muito Bom','Medio','Sim','Sim',[ubereats,glovo], medio).
+restaurante('Pizzaria Luzzo'), [pizza, italiana], 'Guimaraes', 'Muito Bom','Medio','Sim','Sim',[ubereats,glovo], medio).
+restaurante('Casa Salgado', [portuguesa], 'Braga', 'Muito Bom','Acessivel', nao, sim, [glovo], medio).
+restaurante('Celeste', [pizza], 'Braga', 'Muito Bom','Acessivel','Sim','Sim',[glovo], medio).
+restaurante('Churrasqueira da Central', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[glovo], medio).
+restaurante('Churrasqueira Luanda', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[glovo], medio).
+restaurante('Churrasqueira Oliveira', [churrasco], 'Braga', 'Muito Bom','Medio','Sim','Sim',[glovo], medio).
+restaurante('Dgema', [hamburgueres], 'Braga','Muito Bom', 'Acessivel', nao, sim, [ubereats], medio).
+restaurante('Eat Fit',[saudável, vegetariana],'Braga','Muito Bom', 'Medio', nao, sim, [ubereats], medio).
+restaurante('Foz',[churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[glovo], medio).
+restaurante('Frigideiras da Sé',[portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[glovo], medio).
+restaurante('Grelhados Maravilha',[churrasco],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[glovo], medio).
+restaurante('Gulbenkian Francesinhas',[portuguesa],'Braga','Muito Bom', 'Acessivel','Sim','Sim',[glovo], medio).
+restaurante('Habanero',[mexicana],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[ubereats], medio).
+restaurante('Hanami Sushi',[sushi, japonesa],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[ubereats], medio).
+restaurante('Il Fiume',[italiana, pizza],'Braga','Muito Bom', 'Acessivel', nao, sim, [glovo, ubereats], medio).
+restaurante('La Porta',[italiana, pizza],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[glovo], medio).
+restaurante('McDonalds',[hamburgueres],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[glovo, ubereats], medio).
+restaurante('Mimos Smoke House',[hamburgueres],'Braga','Excelente', 'Medio', 'Sim','Sim',[glovo], medio).
+restaurante('Mr.Pizza',[pizza, italiana],'Braga','Muito Bom', 'Acessivel', , nao, sim, [ubereats], medio).
+restaurante('Muteki',[japonesa],'Braga','Muito Bom', 'Medio', 'Sim','Sim',[glovo], medio).
+restaurante('Nata Lisboa',[portuguesa],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[ubereats], medio).
+restaurante('Nochas Tapas  Wine',[sanduiches],'Braga','Muito Bom', 'Acessivel', 'Sim','Sim',[glovo], medio).
+restaurante('Nogueira Bar',[portuguesa, hamburgueres, sanduiches],'Braga','Excelente', 'Acessivel', 'Sim','Sim',[glovo], medio).
+restaurante('O Amor vive na Cozinha',[saudável, hamburgueres, sanduiches],'Braga','Muito Bom', 'Acessivel', 'Não','Sim',[ubereats], medio).
 restaurante('O Filho da Mãe',[mexicana],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
 restaurante('Oubela',[portugesa, pizza],'braga', 'acessivel', 'sim','sim',[ubereats], medio).
 restaurante('Pastelaria JP',[portugesa],'braga', 'acessivel', 'sim','sim',[glovo], baixo).
