@@ -58,3 +58,8 @@ restaurante('Tia Isabel',[portuguesa],'braga', 'medio', 'sim','sim',[ubereats, g
 restaurante('Tourigalo',[portuguesa, churrasco],'braga', 'medio', 'sim','sim',[ubereats, glovo], medio).
 restaurante('ViaBracara',[portuguesa],'braga', 'acessivel', 'nao','sim',[ubereats, glovo], medio).
 restaurante('Cachorrão',[hamburgueres, sanduiches],'guimaraes', 'acessivel', 'nao','sim',[ubereats], medio).
+
+
+membro( X, [X|_] ).
+membro( X, [_|R] ) :- membro( X, R ).
+
