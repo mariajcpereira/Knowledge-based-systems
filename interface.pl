@@ -24,14 +24,14 @@ avaliarEscolha(2):- write('Foi um prazer ajuda-lo!'), halt.
 avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de novo'), menu.
 
 questao1:-	write('********************************************************************************************************'), nl,
-			write('**  Gostaria de pesquisar por ator?'), nl,
+			write('**  Gostaria de levantar o pedido ou que seja entregue a sua casa?'), nl,
 			write('**'),nl,
-			write('**  1 - Sim'), nl,
-			write('**  2 - Nao'), nl,nl,
+			write('**  1 - TakeAway'), nl,
+			write('**  2 - Entrega'), nl,nl,
 			read(A1),
 			(
-			(A1 == 1),assert(fact(ator)), questao2;
-            (A1 == 2),  questao3).
+			(A1 == 1),assert(fact(take_away)), questao3;
+            (A1 == 2),assert(fact(entrega)), questao2).
 
 questao2:-	write('********************************************************************************************************'), nl,
 			write('**  Qual o nome do ator/atriz?'), nl,
@@ -39,48 +39,34 @@ questao2:-	write('**************************************************************
 			read(A4),assert(variavel(A4)),resultado.
 			
 questao3:-	write('********************************************************************************************************'), nl,
-			write('**  Qual o seu genero favorito? Destas opcoes, introduza o numero correspondente:'), nl,
+			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
 			write('**'),nl,
-			write('**  1 - Terror'), nl,
-			write('**  2 - Comedia'), nl, 
-			write('**  3 - Crime'),nl,
-			write('**  4 - Drama'), nl,
-			write('**  5 - Thriller'), nl,
-			write('**  6 - Biografia'), nl,
-			write('**  7 - Sci-fi'), nl,
-			write('**  8 - Fantasia'), nl,
-			write('**  9 - Familia'), nl,
-			write('**  10 - Misterio'), nl,
-			write('**  11 - Animacao'), nl,
-			write('**  12 - Guerra'), nl,
-			write('**  13 - Aventura'), nl,
-			write('**  14 - Acao'), nl,
-			write('**  15 - Musica'), nl,
-			write('**  16 - Historia'), nl,
-			write('**  17 - Romance'), nl,nl,
+			write('**  1 - Portuguesa'), nl,
+			write('**  2 - Churrasco'), nl, 
+			write('**  3 - Hamburgueres'),nl,
+			write('**  4 - Sanduiches'), nl,
+			write('**  5 - Japonesa'), nl,
+			write('**  6 - Sushi'), nl,
+			write('**  7 - Pizza'), nl,
+			write('**  8 - Italiana'), nl,
+			write('**  9 - Saudavel'), nl,
+			write('**  10 - Mexicana'), nl,
 			read(A3),
 			(
-			(A3 == 1), assert(fact(terror)), questao4;
-            (A3 == 2), assert(fact(comedia)), questao4;
-            (A3 == 3), assert(fact(crime)), questao4;
-            (A3 == 4), assert(fact(drama)), questao4;
-            (A3 == 5), assert(fact(thriller)), questao4;
-            (A3 == 6), assert(fact(biografia)), questao4;
-            (A3 == 7), assert(fact(sci-fi)), questao4;
-            (A3 == 8), assert(fact(fantasia)), questao4;
-            (A3 == 9), assert(fact(familia)), questao4;
-            (A3 == 10), assert(fact(misterio)), questao4;
-            (A3 == 11), assert(fact(animacao)), questao4;
-            (A3 == 12), assert(fact(guerra)), questao4;
-            (A3 == 13), assert(fact(aventura)), questao4;
-            (A3 == 14), assert(fact(acao)), questao4;
-            (A3 == 15), assert(fact(muscia)), questao4;
-			(A3 == 16), assert(fact(historia)), questao4;
-	        (A3 == 17), assert(fact(romance)), questao4).
+			(A3 == 1), assert(fact(portuguesa)), questao4;
+            (A3 == 2), assert(fact(churrasco)), questao4;
+            (A3 == 3), assert(fact(hamburgueres)), questao4;
+            (A3 == 4), assert(fact(sanduiches)), questao4;
+            (A3 == 5), assert(fact(japonesa)), questao4;
+            (A3 == 6), assert(fact(sushi)), questao4;
+            (A3 == 7), assert(fact(pizza)), questao4;
+            (A3 == 8), assert(fact(italiana)), questao4;
+            (A3 == 9), assert(fact(saudavel)), questao4;
+            (A3 == 10), assert(fact(mexicana)), questao4.
 			
 
 questao4:- 	write('********************************************************************************************************'), nl,
-			write('**  A partir de que ano deseja?'), nl, 
+			write('**  '), nl, 
 			write('**'),nl,nl,			
 			read(A4), assert(variavel(A4)),
 			questao5.
