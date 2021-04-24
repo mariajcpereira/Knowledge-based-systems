@@ -63,3 +63,22 @@ restaurante('Cachorrão',[hamburgueres, sanduiches], guimaraes, acessivel, takea
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
+verrestaurante(X,W,Z):- findall(Y,(restaurante(Y,H,_,U,_,_,W), H>=Z, membro(X,U)),K), print(K).
+
+verrestaurantetipo_de_alimentação(X):- findall(Y,(filme(Y,_,_,_,_,_,U,_), membro(X,U)),K), print(K).
+
+perfil(1,Z):- verrestaurante(guimaraes,takeaway_sim,Z).
+perfil(2,Z):- verrestaurante(acessivel,gratuito,Z).
+perfil(3,Z):- verrestaurante(sushi,braga,takeaway_sim,Z).
+perfil(4,Z):- verrestaurante(hamburgueres,guimaraes,Z).
+perfil(5,Z):- verrestaurante(italiana,braga,takeaway_sim,Z).
+perfil(6,Z):- verrestaurante(pizza,guimaraes,takeaway_sim,Z).
+perfil(7,Z):- verrestaurante(japonesa,entrega_sim,medio,Z).
+perfil(8,Z):- verrestaurante(braga,acessivel,entrega_sim,Z).
+perfil(9,Z):- verrestaurante(mexicana,entrega_sim,medio,Z).
+perfil(10,Z):- verrestaurante(hamburgueres,acessivel,sim,Z).
+perfil(11,Z):- verrestaurante(churrasco,braga,entrega_sim,medio,Z).
+perfil(12,Z):- verrestaurante(hamburgueres,braga,acessivel,medio,Z).
+perfil(13,Z):- verrestaurante(portuguesa,braga, medio,entrega_sim,medio,Z).
+perfil(14,Z):- verrestaurante(portuguesa,guimaraes,entrega_sim,medio,Z).
+perfil(15,Z):- verrestaurante(saudavel,braga,acessivel,entrega_sim,medio,Z).
