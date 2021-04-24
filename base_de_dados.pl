@@ -1,4 +1,5 @@
-/*restaurante(nome_restaurante, tipo_de_alimentação(1,2,3), localização, classificacao, preço_medio_p_pessoa, take_away, entrega, custo_entrega)*/
+%base_de_dados
+/*restaurante(nome_restaurante, categoria(1,2,3), localizacao, classificacao, preço_medio_p_pessoa, take_away, entrega, custo_entrega)*/
 
 restaurante('As Manas', [portuguesa], braga, muito_bom, acessivel, takeaway_sim, entrega_sim, baixo).
 restaurante('Bibo Porto', [portuguesa, churrasco], braga, muito_bom, medio, takeaway_nao, entrega_sim, medio).
