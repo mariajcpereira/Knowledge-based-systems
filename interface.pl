@@ -45,18 +45,14 @@ questao2:-	write('**************************************************************
             (A2 == 2),assert(fact(entrega_sim)), questao3.
 	    
 questao3:-	write('********************************************************************************************************'), nl,
-			write('**  Que taxa de entrega está disposto a pagar?'), nl,
+			write('**  Deseja uma entrega com custos de entrega extras?'), nl,
 			write('**'),nl,
-			write('**  1 - Gratuito'), nl,
-			write('**  2 - Baixo'), nl,
-			write('**  3 - Médio'), nl,
-			write('**  4 - Indiferente'), nl,nl,
+			write('**  1 - Sim'), nl,
+			write('**  2 - Nao'), nl,nl,
 			read(A3),
 			(
-			(A3 == 1),assert(fact(gratuito)), questao4;
-	    (A3 == 2),assert(fact(baixo)), questao4;
-	    (A3 == 3),assert(fact(medio)), questao4;
-            (A3 == 4), questao4.
+			(A3 == 1),assert(fact(custo_sim)), questao4;
+            (A3 == 2),assert(fact(custo_nao)), questao4.
 			
 questao4:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
