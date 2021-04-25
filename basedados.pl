@@ -83,7 +83,7 @@ membro( X, [_|R] ) :- membro( X, R ).
 
 verrestaurante(X,W,Z):- findall(Y,(restaurante(Y,H,_,U,_,_,W), H>=Z, membro(X,U)),K), print(K).
 
-verrestaurantetipo_de_alimentação(X):- findall(Y,(filme(Y,_,_,_,_,_,U,_), membro(X,U)),K), print(K).
+verrestaurantetipo_de_alimentação(X):- findall(Y,(restaurante(Y,_,_,_,_,_,U,_), membro(X,U)),K), print(K).
 
 perfil(1,Z):- verrestaurante(guimaraes,takeaway_sim,Z).
 perfil(2,Z):- verrestaurante(acessivel,custo_nao,Z).
