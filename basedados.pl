@@ -94,7 +94,7 @@ perfil(6,Z):- verrestaurante(pizza,guimaraes,takeaway_sim,Z).
 perfil(7,Z):- verrestaurante(japonesa,entrega_sim,custo_sim,Z).
 perfil(8,Z):- verrestaurante(braga,acessivel,entrega_sim,Z).
 perfil(9,Z):- verrestaurante(mexicana,entrega_sim,custo_sim,Z).
-perfil(10,Z):- verrestaurante(hamburgueres,acessivel,akeaway_sim,Z).
+perfil(10,Z):- verrestaurante(hamburgueres,acessivel,takeaway_sim,Z).
 perfil(11,Z):- verrestaurante(churrasco,braga,entrega_sim,custo_sim,Z).
 perfil(12,Z):- verrestaurante(hamburgueres,braga,acessivel,custo_nao,Z).
 perfil(13,Z):- verrestaurante(portuguesa,braga, medio,entrega_sim,custo_nao,Z).
