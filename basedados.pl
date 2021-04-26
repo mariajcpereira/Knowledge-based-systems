@@ -81,7 +81,7 @@ restaurante('Napolitana',[italiana,pizza], [guimaraes], acessivel, takeaway_sim,
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-verrestaurante(X,W,Z):- findall(Y,(restaurante(Y,H,_,U,_,_,W), H>=Z, membro(X,U)),K), print(K).
+verrestaurante(X,W,Z):- findall(Y,(restaurante(Y,H,_,U,_,_,_,W), H>=Z, membro(X,U)),K), print(K).
 
 verrestaurantetipo_de_alimentação(X):- findall(Y,(restaurante(Y,_,_,_,_,_,U,_), membro(X,U)),K), print(K).
 
