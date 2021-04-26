@@ -1,4 +1,4 @@
-%base_de_dados
+%basedados
 /*restaurante(nome_restaurante, categoria(1,2,3), localizacao(1,2), classificacao, preço_medio_p_pessoa, take_away, entrega, custo_entrega)*/
 
 restaurante('As Manas', [portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
