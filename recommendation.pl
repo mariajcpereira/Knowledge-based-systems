@@ -101,3 +101,12 @@ data([saudavel, medio, sim, sim, nao, boa]).
 data([saudavel, caro, sim, sim, sim, ma]).
 data([saudavel, caro, nao, sim, sim, ma]).
 data([saudavel, caro, sim, sim, nao, boa]).
+
+% lets preprocess the data:
+% this creates a new recommendation2.pl file with the attributes and examples
+createfile:- 
+	preprocess, % build all examples
+	tell('recommendation2.pl'),
+        listing(attribute/2),
+        listing(example/2),
+        told.
