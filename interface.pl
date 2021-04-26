@@ -8,7 +8,7 @@ menu:- nl,nl , 	write('*********************************************************
 				write('  Prazer em estar a ajuda-lo/a Sr./a '), write(X) ,nl,nl,nl,
 				write('********************************************************************************************************'), nl,
 				write('**                                                                                                    **'), nl,			 
-				write('**                          Descubra qual/quais o/s melhor/es restaurantea/s para si!                        **'), nl,
+				write('**                          Descubra o/s  melhor/es restaurante/s para a sua escolha de refeicao!                        **'), nl,
 				write('**                      Faremos algumas perguntas para o/a ajudar na sua escolha!                     **'), nl, 
 				write('**                                                                                                    **'), nl,			 
 				write('********************************************************************************************************'), nl,
