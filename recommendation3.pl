@@ -10,5 +10,5 @@ learn_rules:-
 	told.
 
 % example of classifying `new' objects:
-//q1(Class):- classify([outlook=sunny,temperature=hot,humidity=normal,wind=weak],Class).
+%q1(Class):- classify([outlook=sunny,temperature=hot,humidity=normal,wind=weak],Class).
 
