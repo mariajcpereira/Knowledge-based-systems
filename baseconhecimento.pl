@@ -1,6 +1,5 @@
-:-(forward,basedados),dynamic(fact/1).
 
-%baseconhecimento
+%perfis
 
 if guimaraes and takeaway_sim then 1.
 if acessivel and custo_nao then 2.
