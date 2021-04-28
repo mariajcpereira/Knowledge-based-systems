@@ -79,8 +79,7 @@ refeicao('Napolitana',[italiana,pizza], [guimaraes], acessivel, takeaway_sim, en
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-verrefeicao(X,C,L,V,T,E,W):- findall(N,(refeicao(N,C,L,V,T,E,W),  membro(X,C), membro(X,L),
-membro(X,V), membro(X,T), membro(X,E)),K), print(K).
+verrefeicao(C,L,V,T,E,W):- findall(N,(refeicao(N,Z,Y,V,T,E,W), membro(C,Z), membro(L,Y)), K), print(K).
 
 verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,_,L,_,_,_,_), membro(X,L)),K), print(K).
 
