@@ -1,1 +1,99 @@
+attribute(categoria, [portuguesa, churrasco, hamburgueres, sanduiches, japonesa, sushi, pizza, italiana, saudavel, mexicana]).
+attribute(custo_medio, [acessivel, medio, caro]).
+attribute(takeaway, [sim, nao]).
+attribute(entrega, [sim, nao]).
+attribute(custo_entrega, [sim, nao]).
+
+:- dynamic example/2.
+
+example(boa, [categoria=portuguesa, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=portuguesa, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=portuguesa, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=portuguesa, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=portuguesa, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=portuguesa, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=portuguesa, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=portuguesa, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=portuguesa, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=churrasco, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=churrasco, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=churrasco, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=churrasco, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=churrasco, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=churrasco, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=churrasco, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=churrasco, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=churrasco, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=hamburgueres, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=hamburgueres, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=hamburgueres, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=hamburgueres, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=hamburgueres, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=hamburgueres, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=hamburgueres, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=hamburgueres, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=hamburgueres, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=sanduiches, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sanduiches, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sanduiches, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=sanduiches, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=sanduiches, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sanduiches, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=sanduiches, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=sanduiches, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sanduiches, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=italiana, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=italiana, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=italiana, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=italiana, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=italiana, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=italiana, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=italiana, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=italiana, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=italiana, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=pizza, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=pizza, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=pizza, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=pizza, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=pizza, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=pizza, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=pizza, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=pizza, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=pizza, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=japonesa, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=japonesa, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=japonesa, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=japonesa, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=japonesa, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=japonesa, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=japonesa, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=japonesa, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=japonesa, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=sushi, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sushi, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sushi, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=sushi, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=sushi, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sushi, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=sushi, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=sushi, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=sushi, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=mexicana, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=mexicana, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=mexicana, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=mexicana, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=mexicana, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=mexicana, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=mexicana, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=mexicana, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=mexicana, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=saudavel, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=saudavel, custo_medio=acessivel, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=saudavel, custo_medio=acessivel, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(boa, [categoria=saudavel, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=saudavel, custo_medio=medio, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=saudavel, custo_medio=medio, takeaway=sim, entrega=sim, custo_entrega=nao]).
+example(ma, [categoria=saudavel, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=sim]).
+example(ma, [categoria=saudavel, custo_medio=caro, takeaway=nao, entrega=sim, custo_entrega=sim]).
+example(boa, [categoria=saudavel, custo_medio=caro, takeaway=sim, entrega=sim, custo_entrega=nao]).
 
