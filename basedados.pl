@@ -1,3 +1,5 @@
+:-dynamic(fact/1),(forward).
+
 %basedados
 /*refeicao(nome_restaurante, categoria(1,2,3), localizacao(1,2), classificacao, preço_medio_p_pessoa, take_away, entrega, custo_entrega)*/
 
