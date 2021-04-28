@@ -95,6 +95,6 @@ perfil(9):- verrefeicao(mexicana,_,_,_,entrega_sim,custo_sim).
 perfil(10):- verrefeicao(hamburgueres,_,acessivel,takeaway_sim,_,_).
 perfil(11):- verrefeicao(churrasco,braga,_,_,entrega_sim,custo_sim).
 perfil(12):- verrefeicao(hamburgueres,braga,acessivel,_,_,custo_nao).
-perfil(13):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_nao).
+perfil(13):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_sim).
 perfil(14):- verrefeicao(portuguesa,guimaraes,_,_,entrega_sim,custo_sim).
 perfil(15):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_nao).
