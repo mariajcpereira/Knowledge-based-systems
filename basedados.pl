@@ -93,8 +93,8 @@ perfil(7):- verrefeicao(japonesa,_,_,_,entrega_sim,custo_sim).
 perfil(8):- verrefeicao(_,braga,acessivel,_,entrega_sim,_).
 perfil(9):- verrefeicao(mexicana,_,_,_,entrega_sim,custo_sim).
 perfil(10):- verrefeicao(hamburgueres,_,acessivel,takeaway_sim,_,_).
-perfil(11):- verrefeicao(churrasco,braga,entrega_sim,custo_sim).
-perfil(12):- verrefeicao(hamburgueres,braga,acessivel,custo_nao).
-perfil(13):- verrefeicao(portuguesa,braga, medio,entrega_sim,custo_nao).
-perfil(14):- verrefeicao(portuguesa,guimaraes,entrega_sim,custo_sim).
-perfil(15):- verrefeicao(saudavel,braga,acessivel,entrega_sim,custo_nao).
+perfil(11):- verrefeicao(churrasco,braga,_,_,entrega_sim,custo_sim).
+perfil(12):- verrefeicao(hamburgueres,braga,acessivel,_,_,custo_nao).
+perfil(13):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_nao).
+perfil(14):- verrefeicao(portuguesa,guimaraes,_,_,entrega_sim,custo_sim).
+perfil(15):- verrefeicao(saudavel,braga,acessivel,_,entrega_sim,custo_nao).
