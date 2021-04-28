@@ -84,15 +84,15 @@ verrefeicao(C,L,V,T,E,W):- findall(N,(refeicao(N,Z,Y,V,T,E,W), membro(C,Z), memb
 verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,_,L,_,_,_,_), membro(X,L)),K), print(K).
 
 perfil(1):- verrefeicao(_,guimaraes,_,takeaway_sim,_,_).
-perfil(2):- verrefeicao(acessivel,custo_nao).
-perfil(3):- verrefeicao(sushi,braga,takeaway_sim).
-perfil(4):- verrefeicao(hamburgueres,guimaraes).
-perfil(5):- verrefeicao(italiana,braga,takeaway_sim).
-perfil(6):- verrefeicao(pizza,guimaraes,takeaway_sim).
-perfil(7):- verrefeicao(japonesa,entrega_sim,custo_sim).
-perfil(8):- verrefeicao(braga,acessivel,entrega_sim).
-perfil(9):- verrefeicao(mexicana,entrega_sim,custo_sim).
-perfil(10):- verrefeicao(hamburgueres,acessivel,takeaway_sim).
+perfil(2):- verrefeicao(_,_,acessivel,_,_,custo_nao).
+perfil(3):- verrefeicao(sushi,braga,_,takeaway_sim,_,_).
+perfil(4):- verrefeicao(hamburgueres,guimaraes,_,_,_,_).
+perfil(5):- verrefeicao(italiana,braga,_,takeaway_sim,_._).
+perfil(6):- verrefeicao(pizza,guimaraes,_,takeaway_sim,_,_).
+perfil(7):- verrefeicao(japonesa,_,_,entrega_sim,custo_sim).
+perfil(8):- verrefeicao(_,braga,acessivel,_,entrega_sim,_).
+perfil(9):- verrefeicao(mexicana,_,_,_,entrega_sim,custo_sim).
+perfil(10):- verrefeicao(hamburgueres,_,acessivel,takeaway_sim,_,_).
 perfil(11):- verrefeicao(churrasco,braga,entrega_sim,custo_sim).
 perfil(12):- verrefeicao(hamburgueres,braga,acessivel,custo_nao).
 perfil(13):- verrefeicao(portuguesa,braga, medio,entrega_sim,custo_nao).
