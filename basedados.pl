@@ -38,7 +38,7 @@ refeicao('Muteki',[japonesa], [braga], muito_bom, caro, takeaway_sim, entrega_si
 refeicao('Nata Lisboa',[portuguesa], [braga], excelente, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Nochas Tapas  Wine',[sanduiches], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Nogueira Bar',[portuguesa, hamburgueres, sanduiches], [braga], excelente, acessivel, takeaway_sim, entrega_sim, custo_sim).
-refeicao('O Amor vive na Cozinha',[saudavel, hamburgueres, sanduiches], [braga], muito_bom, acessivel, takeaway_não, entrega_sim, custo_nao).
+refeicao('O Amor vive na Cozinha',[saudavel, hamburgueres, sanduiches], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim, custo_nao).
 refeicao('O Filho da Mãe',[mexicana], [braga], medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Oubela',[portugesa, pizza], [braga], acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Pastelaria JP',[portugesa], [braga], acessivel, takeaway_sim, entrega_sim, custo_sim).
