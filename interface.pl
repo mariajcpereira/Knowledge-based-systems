@@ -101,9 +101,9 @@ resultado :- 	write('***********************************************************
 				write('********************************************************************************************************'),
 				result.
 
-/*resultadowrite(P):-	variavel(A4),nl,
+resultadowrite(P):-	variavel(A4),nl,
 					write('     O seu perfil e o'),nl,
 					write('     *** '),write(P),write(' ***'),nl,nl,
 					write('     Restaurantes aconselhados: '),perfil(P,A4),nl,nl,
 					write('********************************************************************************************************'),
-					retract(variavel(A4)), retractall(fact(_)).*/
+					retract(variavel(A4)), retractall(fact(_)).
