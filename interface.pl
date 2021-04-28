@@ -1,6 +1,8 @@
 :-dynamic(fact/1),
 [forward, basedados, proof, baseconhecimento].
 
+:- initialization(menu).
+
 menu:- nl,nl , 	write('********************************************************************************************************'), nl,
 				write('           O que lhe apetece hoje? Temos aqui um guia de restaurantes para si! Antes de iniciar, qual o seu nome?'),nl,
 				read(X) ,nl,
