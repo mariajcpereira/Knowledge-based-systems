@@ -16,16 +16,16 @@ refeicao('Formigas', [portuguesa, sushi, japonesa], [braga], muito_bom, medio, t
 refeicao('Cafe do Luis',[hamburgueres, sanduiches],[braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Cafe Vianna',[portuguesa], [braga], muito_bom, caro, takeaway_sim, entrega_sim, custo_nao).
 refeicao('Caffe Italy',[pizza, italiana], [braga], muito_bom, medio, takeaway_sim , entrega_sim, custo_nao).
-refeicao('Pizzaria Luzzo'), [pizza, italiana], [braga,guimaraes], muito_bom, caro, takeaway_sim, entrega_sim, medio).
+refeicao('Pizzaria Luzzo', [pizza, italiana], [braga,guimaraes], muito_bom, caro, takeaway_sim, entrega_sim, medio).
 refeicao('Casa Salgado', [portuguesa], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim, custo_sim).
 refeicao('Celeste', [pizza], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Churrasqueira da Central', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Churrasqueira Luanda', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Churrasqueira Oliveira', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Dgema', [hamburgueres], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim, custo_nao).
-refeicao('Eat Fit',[saudável, vegetariana], [braga], muito_bom, caro, takeaway_nao, entrega_sim, custo_nao).
+refeicao('Eat Fit',[saudavel, vegetariana], [braga], muito_bom, caro, takeaway_nao, entrega_sim, custo_nao).
 refeicao('Foz',[churrasco], [braga], muito_bom, acessivel, takeaway_sim, takeaway_nao, custo_nao).
-refeicao('Frigideiras da Sé',[portuguesa], [braga], muito_bom acessivel, takeaway_sim, entrega_sim, custo_nao).
+refeicao('Frigideiras da Sé',[portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_nao).
 refeicao('Grelhados Maravilha',[churrasco], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Gulbenkian Francesinhas',[portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Habanero',[mexicana], [braga], muito_bom, caro, takeaway_sim, entrega_sim, custo_sim).
@@ -34,12 +34,12 @@ refeicao('Il Fiume',[italiana, pizza], [braga], muito_bom, acessivel, takeaway_n
 refeicao('La Porta',[italiana, pizza], [braga], muito_bom, medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('McDonalds',[hamburgueres], [braga,guimaraes], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Mimos Smoke House',[hamburgueres], [braga], excelente, medio, takeaway_sim, entrega_sim, custo_nao).
-refeicao('Mr.Pizza',[pizza, italiana], [braga], muito_bom, acessivel, , takeaway_nao, entrega_sim, custo_nao).
+refeicao('Mr.Pizza',[pizza, italiana], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim, custo_nao).
 refeicao('Muteki',[japonesa], [braga], muito_bom, caro, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Nata Lisboa',[portuguesa], [braga], excelente, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Nochas Tapas  Wine',[sanduiches], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Nogueira Bar',[portuguesa, hamburgueres, sanduiches], [braga], excelente, acessivel, takeaway_sim, entrega_sim, custo_sim).
-refeicao('O Amor vive na Cozinha',[saudável, hamburgueres, sanduiches], [braga], muito_bom, acessivel, takeaway_não, entrega_sim, custo_nao).
+refeicao('O Amor vive na Cozinha',[saudavel, hamburgueres, sanduiches], [braga], muito_bom, acessivel, takeaway_não, entrega_sim, custo_nao).
 refeicao('O Filho da Mãe',[mexicana], [braga], medio, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Oubela',[portugesa, pizza], [braga], acessivel, takeaway_sim, entrega_sim, custo_sim).
 refeicao('Pastelaria JP',[portugesa], [braga], acessivel, takeaway_sim, entrega_sim, custo_sim).
@@ -68,7 +68,7 @@ refeicao('Restaurante Príncipe Parque',[portuguesa], [guimaraes], medio, takeaw
 refeicao('A Cozinha por António Loureiro',[portuguesa], [guimaraes], caro, takeaway_nao, entrega_sim, custo_sim).
 refeicao('HOOL Restaurante',[portuguesa], [guimaraes], acessivel, takeaway_sim, entrega_sim, custo_nao).
 refeicao('Sao Giao',[portuguesa], [guimaraes], caro, takeaway_nao, entrega_sim, custo_sim).
-refeicao('Dan's',[hamburgueres,sanduiches], [guimaraes], acessivel, takeaway_sim, entrega_sim, custo_nao).
+refeicao('Dan s', [hamburgueres,sanduiches], [guimaraes], acessivel, takeaway_sim, entrega_sim, custo_nao).
 refeicao('Bar Danúbio',[sanduiches,portuguesa], [guimaraes], acessivel, takeaway_sim, entrega_sim, custo_nao).
 refeicao('Forno da Vila',[italiana,pizza], [guimaraes], acessivel, takeaway_nao, entrega_sim, custo_sim).
 refeicao('Restaurante Príncipe Parque',[portuguesa,churrasco], [guimaraes], medio, takeaway_nao, entrega_sim, custo_sim).
