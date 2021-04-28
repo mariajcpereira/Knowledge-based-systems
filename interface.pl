@@ -88,7 +88,7 @@ questao5:- 	write('*************************************************************
 			write('**'),nl,
 			write('**  1 - Preco acessivel'),nl, 
 			write('**  2 - Preco medio'),nl, 
-			write('**  3 - Preco elevado'),n1,nl,
+			write('**  3 - Preco elevado'),nl, nl,
 			read(A5),nl,
 		    (
 		    (A5 == 1), assert(fact(acessivel)), resultado;
