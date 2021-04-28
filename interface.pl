@@ -32,7 +32,7 @@ questao1:-	write('**************************************************************
 			read(A1),
 			(
 			(A1 == 1),assert(fact(braga)), questao2;
-            (A1 == 2),assert(fact(guimaraes)), questao2.
+            (A1 == 2),assert(fact(guimaraes)), questao2).
 	    
 questao2:-	write('********************************************************************************************************'), nl,
 			write('**  Gostaria de levantar o pedido ou que seja entregue a sua casa?'), nl,
@@ -42,7 +42,7 @@ questao2:-	write('**************************************************************
 			read(A2),
 			(
 			(A2 == 1),assert(fact(takeaway_sim)), questao4;
-            (A2 == 2),assert(fact(entrega_sim)), questao3.
+            (A2 == 2),assert(fact(entrega_sim)), questao3).
 	    
 questao3:-	write('********************************************************************************************************'), nl,
 			write('**  Deseja uma entrega com custos de entrega extras?'), nl,
@@ -52,7 +52,7 @@ questao3:-	write('**************************************************************
 			read(A3),
 			(
 			(A3 == 1),assert(fact(custo_sim)), questao4;
-            (A3 == 2),assert(fact(custo_nao)), questao4.
+            (A3 == 2),assert(fact(custo_nao)), questao4).
 			
 questao4:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
@@ -78,7 +78,7 @@ questao4:-	write('**************************************************************
             (A4 == 7), assert(fact(pizza)), questao5;
             (A4 == 8), assert(fact(italiana)), questao5;
             (A4 == 9), assert(fact(saudavel)), questao5;
-            (A4 == 10), assert(fact(mexicana)), questao5.
+            (A4 == 10), assert(fact(mexicana)), questao5).
 			
 
 questao5:- 	write('********************************************************************************************************'), nl,
