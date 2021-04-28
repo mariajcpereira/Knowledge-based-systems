@@ -97,4 +97,4 @@ perfil(11):- verrefeicao(churrasco,braga,_,_,entrega_sim,custo_sim).
 perfil(12):- verrefeicao(hamburgueres,braga,acessivel,_,_,custo_nao).
 perfil(13):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_nao).
 perfil(14):- verrefeicao(portuguesa,guimaraes,_,_,entrega_sim,custo_sim).
-perfil(15):- verrefeicao(saudavel,braga,acessivel,_,entrega_sim,custo_nao).
+perfil(15):- verrefeicao(portuguesa,braga,medio,_,entrega_sim,custo_nao).
