@@ -13,6 +13,6 @@ if mexicana and entrega_sim and custo_sim then 9.
 if hamburgueres and acessivel and takeaway_sim then 10.
 if churrasco and braga and entrega_sim and custo_sim then 11.
 if hamburgueres and braga and acessivel and custo_nao then 12.
-if portuguesa and braga and medio and entrega_sim and custo_nao then 13.
+if portuguesa and braga and medio and entrega_sim and custo_sim then 13.
 if portuguesa and guimaraes and entrega_sim and custo_sim then 14.
 if portuguesa and braga and medio and entrega_sim and custo_sim then 15.
