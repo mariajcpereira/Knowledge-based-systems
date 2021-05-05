@@ -10,7 +10,7 @@ learn_rules:-
 	told.
 
 % example of classifying `new' objects:
-q1(Class):- classify([categoria=portuguesa,preco_medio=acessivel,take_away=nao,entrega=sim, custo_entrega=sim],Class).
+q1(Class):- classify([categoria=portuguesa,custo_medio=acessivel,take_away=nao,entrega=sim, custo_entrega=sim],Class).
 
 
 
