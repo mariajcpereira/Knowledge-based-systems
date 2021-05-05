@@ -1,4 +1,27 @@
 :- dynamic (<==)/2.
 
-boa<==[[custo_medio=acessivel], [takeaway=sim, entrega=sim], [custo_medio=medio, entrega=sim, custo_entrega=nao]].
-ma<==[[custo_medio=medio, takeaway=nao, entrega=nao], [custo_medio=medio, custo_entrega=sim], [custo_medio=caro, custo_entrega=sim]].
+boa<==[[custo_medio=acessivel]
+  [custo_entrega=nao,custo_medio=medio]
+  [custo_entrega=nao,categoria=churrasco]
+  [custo_entrega=nao,categoria=hamburgueres]
+  [custo_entrega=nao,categoria=sanduiches]
+  [custo_entrega=nao,categoria=japonesa]
+  [custo_entrega=nao,categoria=sushi]
+  [custo_entrega=nao,categoria=pizza]
+  [custo_entrega=nao,categoria=italiana]
+  [custo_entrega=nao,categoria=saudavel]
+  [takeaway=sim,custo_medio=medio]
+  [custo_entrega=nao,categoria=mexicana]
+  [categoria=portuguesa,takeaway=sim,custo_entrega=sim]].
+ma<==[[custo_medio=caro,takeaway=nao]
+  [custo_medio=caro,custo_entrega=sim,categoria=churrasco]
+  [takeaway=nao,custo_medio=medio]
+  [custo_medio=caro,custo_entrega=sim,categoria=hamburgueres]
+  [custo_medio=caro,custo_entrega=sim,categoria=sanduiches]
+  [custo_medio=caro,custo_entrega=sim,categoria=japonesa]
+  [custo_medio=caro,custo_entrega=sim,categoria=sushi]
+  [custo_medio=caro,custo_entrega=sim,categoria=pizza]
+  [custo_medio=caro,custo_entrega=sim,categoria=italiana]
+  [custo_medio=caro,custo_entrega=sim,categoria=saudavel]
+  [categoria=portuguesa,custo_medio=caro,custo_entrega=nao]
+  [categoria=mexicana,custo_medio=caro,custo_entrega=sim]].
