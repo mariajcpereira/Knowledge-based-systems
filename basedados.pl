@@ -28,6 +28,7 @@ percurso(cliente3, cliente5, 5).
 percurso(cliente5, cliente3, 5).
 percurso(restaurante, cliente4, 7).
 percurso(cliente4, restaurante, 7).
+%travel(X,Y,D):-dist(Y,X,D);dist(X,Y,D). % true if dist or symmetrical
 
 
 %arco(Origem, Destino)
