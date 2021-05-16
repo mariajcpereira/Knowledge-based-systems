@@ -84,7 +84,7 @@ refeicao('Pizzaria Luzzo', [italiana], [braga,guimaraes], muito_bom, caro, takea
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-verrefeicao(C,L,T,E,W):- findall(N,(refeicao(N,Z,Y,V,T,E,W), membro(C,Z), membro(L,Y)), K), print(K).
+verrefeicao(C,L,T,E,W):- findall(N,(refeicao(N,Z,Y,_,T,E,W), membro(C,Z), membro(L,Y)), K), print(K).
 
 verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,L,_,_,_,_), membro(X,L)),K), print(K).
 
