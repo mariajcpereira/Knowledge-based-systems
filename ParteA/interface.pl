@@ -46,17 +46,8 @@ questao2:-	write('**************************************************************
 			(A2 == 1),assert(fact(takeaway_sim)), questao4;
             (A2 == 2),assert(fact(entrega_sim)), questao3).
 	    
-questao3:-	write('********************************************************************************************************'), nl,
-			write('**  Deseja uma entrega com custos de entrega extras?'), nl,
-			write('**'),nl,
-			write('**  1 - Sim'), nl,
-			write('**  2 - Nao'), nl,nl,
-			read(A3),
-			(
-			(A3 == 1),assert(fact(custo_sim)), questao4;
-            (A3 == 2),assert(fact(custo_nao)), questao4).
 			
-questao4:-	write('********************************************************************************************************'), nl,
+questao3:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
 			write('**'),nl,
 			write('**  1 - Portuguesa'), nl,
@@ -64,11 +55,9 @@ questao4:-	write('**************************************************************
 			write('**  3 - Hamburgueres'),nl,
 			write('**  4 - Sanduiches'), nl,
 			write('**  5 - Japonesa'), nl,
-			write('**  6 - Sushi'), nl,
-			write('**  7 - Pizza'), nl,
-			write('**  8 - Italiana'), nl,
-			write('**  9 - Saudavel'), nl,
-			write('**  10 - Mexicana'), nl,
+			write('**  6 - Italiana'), nl,
+			write('**  7 - Saudavel'), nl,
+			write('**  8 - Mexicana'), nl,
 			read(A4),
 			(
 			(A4 == 1), assert(fact(portuguesa)), questao5;
@@ -78,9 +67,7 @@ questao4:-	write('**************************************************************
             (A4 == 5), assert(fact(japonesa)), questao5;
             (A4 == 6), assert(fact(sushi)), questao5;
             (A4 == 7), assert(fact(pizza)), questao5;
-            (A4 == 8), assert(fact(italiana)), questao5;
-            (A4 == 9), assert(fact(saudavel)), questao5;
-            (A4 == 10), assert(fact(mexicana)), questao5).
+            (A4 == 8), assert(fact(italiana)), questao5).
 			
 
 questao5:- 	write('********************************************************************************************************'), nl,
