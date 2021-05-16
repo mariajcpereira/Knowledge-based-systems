@@ -58,29 +58,29 @@ questao3:-	write('**************************************************************
 			write('**  6 - Italiana'), nl,
 			write('**  7 - Saudavel'), nl,
 			write('**  8 - Mexicana'), nl,
-			read(A4),
+			read(A3),
 			(
-			(A4 == 1), assert(fact(portuguesa)), questao5;
-            (A4 == 2), assert(fact(churrasco)), questao5;
-            (A4 == 3), assert(fact(hamburgueres)), questao5;
-            (A4 == 4), assert(fact(sanduiches)), questao5;
-            (A4 == 5), assert(fact(japonesa)), questao5;
-            (A4 == 6), assert(fact(sushi)), questao5;
-            (A4 == 7), assert(fact(pizza)), questao5;
-            (A4 == 8), assert(fact(italiana)), questao5).
+			(A3 == 1), assert(fact(portuguesa)), questao4;
+            (A3 == 2), assert(fact(churrasco)), questao4;
+            (A3 == 3), assert(fact(hamburgueres)), questao4;
+            (A3 == 4), assert(fact(sanduiches)), questao4;
+            (A3 == 5), assert(fact(japonesa)), questao4;
+            (A3 == 6), assert(fact(sushi)), questao4;
+            (A3 == 7), assert(fact(pizza)), questao4;
+            (A3 == 8), assert(fact(italiana)), questao4).
 			
 
-questao5:- 	write('********************************************************************************************************'), nl,
+questao4:- 	write('********************************************************************************************************'), nl,
 			write('**  Deseja um restaurante com que preco de refeicao?'), nl,
 			write('**'),nl,
 			write('**  1 - Preco acessivel'),nl, 
 			write('**  2 - Preco medio'),nl, 
 			write('**  3 - Preco elevado'),nl, nl,
-			read(A5),nl,
+			read(A4),nl,
 		    (
-		    (A5 == 1), assert(fact(acessivel)), resultado;
-		    (A5 == 2), assert(fact(medio)), resultado;
-			(A5 == 3), assert(fact(caro)), resultado).
+		    (A4 == 1), assert(fact(acessivel)), resultado;
+		    (A4 == 2), assert(fact(medio)), resultado;
+			(A4 == 3), assert(fact(caro)), resultado).
 			
 			
 resultado :- 	write('********************************************************************************************************'), nl,
