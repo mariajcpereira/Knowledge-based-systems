@@ -24,9 +24,9 @@ refeicao('La Porta',[italiana], [braga], muito_bom, medio, takeaway_sim, entrega
 refeicao('Mr.Pizza',[italiana], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim).
 refeicao('BLB',[sanduiches], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim).
 refeicao('Nochas Tapas  Wine',[sanduiches], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
-refeicao('Braga999',[japonesa, sushi], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
-refeicao('Formigas', [portuguesa, sushi, japonesa], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
-refeicao('Hanami Sushi',[sushi, japonesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
+refeicao('Braga999',[japonesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
+refeicao('Formigas', [portuguesa, japonesa], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
+refeicao('Hanami Sushi',[japonesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Muteki',[japonesa], [braga], muito_bom, caro, takeaway_sim, entrega_sim).
 refeicao('Foz',[churrasco], [braga], muito_bom, acessivel, takeaway_sim, takeaway_nao).
 refeicao('Churrasqueira da Central', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
@@ -46,20 +46,20 @@ refeicao('Rotações',[italiana], [braga], acessivel, takeaway_sim, entrega_sim)
 refeicao('Sandes Braga',[sanduiches], [braga], acessivel, takeaway_sim, entrega_sim).
 refeicao('SANNO',[saudavel], [braga], acessivel, sim, [ubereats, glovo]).
 refeicao('Semente Art Coffee & Plant Based',[saudavel, hamburgueres], [braga], acessivel, takeaway_nao, entrega_sim).
-refeicao('Shakai',[sushi, japonesa],[braga], acessivel,entrega_sim, entrega_sim).
-refeicao('Sushi em tua casa',[sushi, japonesa], [braga], medio, takeaway_sim, entrega_sim).
-refeicao('Sushi&Co',[sushi, japonesa], [braga], caro, takeaway_sim, entrega_sim).
+refeicao('Shakai',[japonesa],[braga], acessivel,entrega_sim, entrega_sim).
+refeicao('Sushi em tua casa',[japonesa], [braga], medio, takeaway_sim, entrega_sim).
+refeicao('Sushi&Co',[japonesa], [braga], caro, takeaway_sim, entrega_sim).
 refeicao('Taquería El Cascabel',[mexicana], [braga], acessivel, takeaway_nao, entrega_sim).
-refeicao('Temple San',[sushi, japonesa], [braga], medio, takeaway_sim, entrega_sim).
+refeicao('Temple San',[japonesa], [braga], medio, takeaway_sim, entrega_sim).
 refeicao('Tia Isabel',[portuguesa], [braga], medio, takeaway_sim, entrega_sim).
 refeicao('Tourigalo',[portuguesa, churrasco], [braga], medio, takeaway_sim, entrega_sim).
 refeicao('ViaBracara',[portuguesa], [braga], acessivel, takeaway_nao, entrega_sim).
 
 /*Guimaraes*/
 refeicao('Cachorrão',[hamburgueres, sanduiches], [guimaraes], acessivel, takeaway_nao, entrega_sim).
-refeicao('Yamazaki Sushi Club',[japonesa, sushi], [guimaraes], medio, takeaway_nao, entrega_sim).
+refeicao('Yamazaki Sushi Club',[japonesa], [guimaraes], medio, takeaway_nao, entrega_sim).
 refeicao('Restaurante Monte dos Leitões',[portuguesa], [guimaraes], medio, takeaway_sim, entrega_sim).
-refeicao('Kanji Restaurant Garden & Bar',[japonesa,sushi], [guimaraes], caro, takeaway_sim, entrega_sim).
+refeicao('Kanji Restaurant Garden & Bar',[japonesa], [guimaraes], caro, takeaway_sim, entrega_sim).
 refeicao('Restaurante Príncipe Parque',[portuguesa], [guimaraes], medio, takeaway_sim, entrega_sim).
 refeicao('A Cozinha por António Loureiro',[portuguesa], [guimaraes], caro, takeaway_nao, entrega_sim).
 refeicao('HOOL Restaurante',[portuguesa], [guimaraes], acessivel, takeaway_sim, entrega_sim).
