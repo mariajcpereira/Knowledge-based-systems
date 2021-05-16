@@ -86,7 +86,7 @@ membro( X, [_|R] ) :- membro( X, R ).
 
 verrefeicao(C,L,T,E,W):- findall(N,(refeicao(N,Z,Y,V,T,E,W), membro(C,Z), membro(L,Y)), K), print(K).
 
-verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,L,_,_,_,_), membro(X,L)),K), print(K).
+verrestaurante(X):- findall(N,(refeicao(N,_,_,V,_,_,_), membro(X,L)),K), print(K).
 
 perfil(1):- verrefeicao(guimaraes,portuguesa,acessivel,takeaway_sim,entrega_sim).
 perfil(2):- verrefeicao(guimaraes,portuguesa,acessivel,takeaway_nao,entrega_sim).
