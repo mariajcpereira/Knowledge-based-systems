@@ -16,3 +16,4 @@ if hamburgueres and braga and acessivel and custo_nao then 12.
 if portuguesa and braga and medio and entrega_sim and custo_sim then 13.
 if portuguesa and guimaraes and entrega_sim and custo_sim then 14.
 if portuguesa and braga and medio and entrega_sim and custo_sim then 15.
+if portuguesa and braga and acessivel and entrega_sim then 16.
