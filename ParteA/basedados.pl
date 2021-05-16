@@ -3,7 +3,7 @@
 /*refeicao(nome_restaurante, categoria(1,2,3), localizacao(1,2), classificacao, preço_medio_p_pessoa, take_away, entrega)*/
 
 /*Braga*/
-refeicao('As Manas', [portuguesa], [braga], acessivel, takeaway_sim, entrega_sim).
+refeicao('As Manas', [portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Bibo Porto', [portuguesa, churrasco], [braga], muito_bom, medio, takeaway_nao, entrega_sim).
 refeicao('Bracara Augusta',[portuguesa], [braga], muito_bom, caro, takeaway_nao, entrega_sim).
 refeicao('Cafe Vianna',[portuguesa], [braga], muito_bom, caro, takeaway_sim, entrega_sim).
@@ -86,7 +86,7 @@ membro( X, [_|R] ) :- membro( X, R ).
 
 verrefeicao(C,L,T,E,W):- findall(N,(refeicao(N,Z,Y,V,T,E,W), membro(C,Z), membro(L,Y)), K), print(K).
 
-verrestaurante(X):- findall(N,(refeicao(N,_,_,V,_,_,_), membro(X,V)),K), print(K).
+verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,L,_,_,_,_), membro(X,L)),K), print(K).
 
 perfil(1):- verrefeicao(guimaraes,portuguesa,acessivel,takeaway_sim,entrega_sim).
 perfil(2):- verrefeicao(guimaraes,portuguesa,acessivel,takeaway_nao,entrega_sim).
