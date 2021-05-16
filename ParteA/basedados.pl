@@ -28,7 +28,7 @@ refeicao('Braga999',[japonesa], [braga], muito_bom, acessivel, takeaway_sim, ent
 refeicao('Formigas', [portuguesa, japonesa], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
 refeicao('Hanami Sushi',[japonesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Muteki',[japonesa], [braga], muito_bom, caro, takeaway_sim, entrega_sim).
-refeicao('Foz',[churrasco], [braga], muito_bom, acessivel, takeaway_sim, takeaway_nao).
+refeicao('Foz',[churrasco], [braga], muito_bom, acessivel, takeaway_sim, entrega_Sim).
 refeicao('Churrasqueira da Central', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
 refeicao('Churrasqueira Luanda', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
 refeicao('Churrasqueira Oliveira', [churrasco], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
