@@ -11,6 +11,7 @@ learn_rules:-
 
 % example of classifying `new' objects:
 q1(Class):- classify([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim],Class).
+q2(Class):- classify([],Class).
 
 
 
