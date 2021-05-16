@@ -136,7 +136,7 @@ perfil(45):- verrefeicao(braga,churrasco,medio,takeaway_nao,entrega_sim).
 perfil(46):- verrefeicao(braga,churrasco,medio,takeaway_sim,entrega_sim). 
 perfil(47):- verrefeicao(braga,churrasco,caro,takeaway_sim,entrega_sim). 
 perfil(48):- verrefeicao(braga,sanduiches,acessivel,takeaway_sim,entrega_sim). 
-perfil(49):- verrefeicao(guimaraes,saudável,_,_,_). 
-perfil(50):- verrefeicao(braga,saudavel,acessível,_,_). 
+perfil(49):- verrefeicao(guimaraes,saudavel,_,_,_). 
+perfil(50):- verrefeicao(braga,saudavel,acessivel,_,_). 
 perfil(51):- verrefeicao(braga,saudavel,caro,_,_). 
 
