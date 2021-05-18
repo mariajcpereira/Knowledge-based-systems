@@ -2,8 +2,8 @@
 
 initial(restaurante). % ponto de partida
 
-%viagem(cliente1, cliente2, Distancia)
-viagem(X,Y,Min):-(percurso(X,Y,Min);percurso(Y,X,Min)).
+%calcularDistancia(cliente1, cliente2, Distancia)
+calcularDistancia(X,Y,Min):-(percurso(X,Y,Min);percurso(Y,X,Min)).
 
 inicio:- nl,nl ,write('*********************************************************************************************************'), nl,
 				write('                                                                                                          '), nl,			 
