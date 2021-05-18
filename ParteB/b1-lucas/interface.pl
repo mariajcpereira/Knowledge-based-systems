@@ -1,4 +1,4 @@
-:-[search, baseDados].
+:-[search, basedados].
 
 initial(restaurante). % ponto de partida
 
