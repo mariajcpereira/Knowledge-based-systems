@@ -1,7 +1,7 @@
 
 %perfis
 
-if portuguesa and guimaraes and acessivel and takeaway_sim and entrega_sim then 1.
+if portuguesa and guimaraes and acessivel and (takeaway_sim or entrega_sim) then 1.
 if portuguesa and guimaraes and acessivel and takeaway_nao and entrega_sim then 2.
 if portuguesa and guimaraes and medio and takeaway_nao and entrega_sim then 3.
 if portuguesa and guimaraes and medio and takeaway_sim and entrega_sim then 4.
