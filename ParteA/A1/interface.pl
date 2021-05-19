@@ -43,7 +43,7 @@ questao2:-	write('**************************************************************
 			write('**  2 - Entrega'), nl,nl,
 			read(A2),
 			(
-			(A2 == 1),assert(fact(takeaway_sim)), questao4;
+			(A2 == 1),assert(fact(takeaway_sim)), questao3;
             (A2 == 2),assert(fact(entrega_sim)), questao3).
 	    
 			
