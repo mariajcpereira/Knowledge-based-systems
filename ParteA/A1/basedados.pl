@@ -88,6 +88,8 @@ verrefeicao(C,L,T,E,W):- findall(N,(refeicao(N,Z,Y,_,T,E,W), membro(C,Z), membro
 
 verrestaurantelocalizacao(X):- findall(N,(refeicao(N,_,L,_,_,_,_), membro(X,L)),K), print(K).
 
+verrestaurantecategoria(X):- findall(N,(refeicao(N,C,_,_,_,_,_), membro(X,C)),K), print(K).
+
 perfil(1):- verrefeicao(portuguesa,guimaraes,acessivel,takeaway_sim,entrega_sim).
 perfil(2):- verrefeicao(portuguesa,guimaraes,acessivel,takeaway_nao,entrega_sim).
 perfil(3):- verrefeicao(portuguesa,guimaraes,medio,takeaway_nao,entrega_sim).
