@@ -7,8 +7,7 @@ initial([restaurante]). % initial city
 goal(X):- member(cliente1,X),member(cliente2,X). % destination city
 
 % --- knowledge base:
-% road(Origin,Destination,Distance-in-km)
-% data collected from: https://pt.distance.to/
+%percurso(Origem, Destino, DistanciaEmMin)
 percurso(restaurante, cliente1, 5).
 percurso(cliente1, cliente2, 5).
 percurso(cliente1, cliente4, 5).
