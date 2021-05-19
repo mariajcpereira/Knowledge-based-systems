@@ -9,26 +9,16 @@ entrega(cliente5, 10).
 
 %percurso(Origem, Destino, DistanciaEmMin)
 percurso(restaurante, cliente1, 5).
-percurso(cliente1, restaurante, 5).
 percurso(cliente1, cliente2, 5).
-percurso(cliente2, cliente1, 5).
 percurso(cliente1, cliente4, 5).
-percurso(cliente4, cliente1, 5).
 percurso(cliente1, cliente5, 5).
-percurso(cliente5, cliente1, 5).
 percurso(cliente2, cliente3, 3).
-percurso(cliente3, cliente2, 3).
 percurso(cliente2, cliente4, 2).
-percurso(cliente4, cliente2, 2).
 percurso(cliente2, cliente5, 2).
-percurso(cliente5, cliente2, 2).
 percurso(cliente3, cliente4, 4).
-percurso(cliente4, cliente3, 4).
 percurso(cliente3, cliente5, 5).
-percurso(cliente5, cliente3, 5).
 percurso(restaurante, cliente4, 7).
-percurso(cliente4, restaurante, 7).
-%travel(X,Y,D):-dist(Y,X,D);dist(X,Y,D). % true if dist or symmetrical
+travel(X,Y,D):-percurso(Y,X,D);percurso(X,Y,D). % true if dist or symmetrical
 
 
 %arco(Origem, Destino)
