@@ -115,9 +115,9 @@ perfil(24):- verrefeicao(portuguesa,braga,medio,takeaway_nao,entrega_sim).
 perfil(25):- verrefeicao(portuguesa,braga,medio,takeaway_sim,entrega_sim). 
 perfil(26):- verrefeicao(portuguesa,braga,caro,takeaway_nao,entrega_sim). 
 perfil(27):- verrefeicao(portuguesa,braga,caro,takeaway_sim,entrega_sim). 
-perfil(28):- verrefeicao(braga,mexicana,acessivel,takeaway_nao,entrega_sim). 
-perfil(29):- verrefeicao(braga,mexicana,medio,takeaway_sim,entrega_sim). 
-perfil(30):- verrefeicao(braga,mexicana,caro,takeaway_sim,entrega_sim). 
+perfil(28):- verrefeicao(mexicana,braga,acessivel,takeaway_nao,entrega_sim). 
+perfil(29):- verrefeicao(mexicana,braga,medio,takeaway_sim,entrega_sim). 
+perfil(30):- verrefeicao(mexicana,braga,caro,takeaway_sim,entrega_sim). 
 perfil(31):- verrefeicao(japonesa,braga,acessivel,takeaway_sim,entrega_sim). 
 perfil(32):- verrefeicao(japonesa,braga,medio,takeaway_sim,entrega_sim). 
 perfil(33):- verrefeicao(japonesa,braga,caro,takeaway_sim,entrega_sim). 
