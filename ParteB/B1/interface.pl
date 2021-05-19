@@ -9,7 +9,7 @@ calcularDistancia(X,Y,Min):-(percurso(X,Y,Min);percurso(Y,X,Min)).
 
 inicio:- nl,nl ,write('*********************************************************************************************************'), nl,
 				write('                                                                                                          '), nl,			 
-				write('                         			TITULO  						  		                 '), nl,              
+				write('                   ACONSELHAMENTO DE TRAJETO PARA ENTREGA DE UMA REFEICAO 				'), nl,              
 				write('                                                                                                          '), nl,			 
 				write('*********************************************************************************************************'), nl,
 				write('**'), nl,
