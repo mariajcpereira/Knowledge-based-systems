@@ -1,9 +1,13 @@
 :-[search, basedados].
 
+
+
 initial(restaurante). % ponto de partida
 
 %calcularDistancia(cliente1, cliente2, Distancia)
 calcularDistancia(X,Y,Min):-(percurso(X,Y,Min);percurso(Y,X,Min)).
+
+:- initialization(inicio).
 
 inicio:- nl,nl ,write('*********************************************************************************************************'), nl,
 				write('                                                                                                          '), nl,			 
