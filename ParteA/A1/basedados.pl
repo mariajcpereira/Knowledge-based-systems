@@ -2,7 +2,7 @@
 %basedados
 /*refeicao(nome_restaurante, categoria(1,2,3), localizacao(1,2), classificacao, preço_medio_p_pessoa, take_away, entrega)*/
 
-/*Braga*/
+
 refeicao('As Manas', [portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Bibo Porto', [portuguesa, churrasco], [braga], muito_bom, medio, takeaway_nao, entrega_sim).
 refeicao('Bracara Augusta',[portuguesa], [braga], muito_bom, caro, takeaway_nao, entrega_sim).
@@ -54,8 +54,6 @@ refeicao('Temple San',[japonesa], [braga], muito_bom, medio, takeaway_sim, entre
 refeicao('Tia Isabel',[portuguesa], [braga], muito_bom, medio, takeaway_sim, entrega_sim).
 refeicao('Tourigalo',[portuguesa, churrasco], [braga],muito_bom,  medio, takeaway_sim, entrega_sim).
 refeicao('ViaBracara',[portuguesa], [braga], muito_bom, acessivel, takeaway_nao, entrega_sim).
-
-/*Guimaraes*/
 refeicao('Cachorrão',[hamburgueres, sanduiches], [guimaraes], muito_bom, acessivel, takeaway_nao, entrega_sim).
 refeicao('Yamazaki Sushi Club',[japonesa], [guimaraes], excelente, medio, takeaway_nao, entrega_sim).
 refeicao('Restaurante Monte dos Leitões',[portuguesa], [guimaraes], muito_bom, medio, takeaway_sim, entrega_sim).
@@ -70,9 +68,6 @@ refeicao('Forno da Vila',[italiana], [guimaraes],muito_bom,  acessivel, takeaway
 refeicao('Restaurante Príncipe Parque',[portuguesa,churrasco], [guimaraes], muito_bom, medio, takeaway_nao, entrega_sim).
 refeicao('34.',[saudavel,sanduiches], [guimaraes], muito_bom, medio, takeaway_nao, entrega_sim).
 refeicao('Napolitana',[italiana], [guimaraes], muito_bom, acessivel, takeaway_sim, entrega_sim).
-
-
-
 refeicao('BurgerKing',[hamburgueres], [braga,guimaraes], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Telepizza',[italiana], [braga,guimaraes], muito_bom, acessivel, takeaway_nao, entrega_sim).
 refeicao('Taberna Londrina',[portuguesa], [braga,guimaraes], muito_bom, medio, takeaway_sim, entrega_sim).
