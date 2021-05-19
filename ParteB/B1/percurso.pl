@@ -19,7 +19,7 @@ percurso(cliente3, cliente4, 4).
 percurso(cliente3, cliente5, 5).
 percurso(restaurante, cliente4, 7).
 % travel(City1,City2,distance):
-travel(X,Y,KM):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
+travel(X,Y,D):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
 
 % state transition rule s/2: s(City1,City2)
 s(L1,L2):- last(L1,N1),travel(N1,N2,_),append(L1,[N2],L2). % link s(O,D,Dist) with s(O,D)
