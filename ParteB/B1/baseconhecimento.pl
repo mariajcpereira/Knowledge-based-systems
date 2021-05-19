@@ -45,3 +45,20 @@ caminho(X,Z,Caminho):- caminho(X,Z,[X],Caminho).
 caminho(X,X,Caminho,Caminho):- ocupacaoEncomenda(Caminho,Soma), Soma == 1.
 caminho(X,Z,Visitado,Caminho):- percurso(X,Y,_), \+ member(Y,Visitado), 
 caminho(Y,Z,[Y | Visitado],Caminho).
+
+%QuestoesDoUtilizador
+
+%CaminhoMaisCurto
+caminhoMaisCurto(X,Y,Caminho):- retractall(comprimento(_,_)), listaCaminhos(X,Y,Lista), 
+gerarDistanciasCaminhos(Lista), maisCurto(Caminho).
+
+maisCurto(Caminho):- comprimento(Caminho, V), \+ (comprimento(_, V1), V > V1).
+
+
+%CaminhoMaisLongo
+caminhoMaisLongo(X,Y,Caminho):- retractall(comprimento(_,_)), listaCaminhos(X,Y,Lista), 
+gerarDistanciasCaminhos(Lista), maisLongo(Caminho).
+
+maisLongo(Caminho):- comprimento(Caminho, V), \+ (comprimento(_, V1), V1 > V).
+
+
