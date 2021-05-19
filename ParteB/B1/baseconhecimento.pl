@@ -39,4 +39,9 @@ distanciaCaminho([P1|R1], Valor):-  calcularDistancia(P1,R1,Valor).
 listaCaminhos(X,Y,Lista):- findall(C,caminho(X,Y,C),Lista).
 
 
+%CaminhosDisponiveis
 
+caminho(X,Z,Caminho):- caminho(X,Z,[X],Caminho).
+caminho(X,X,Caminho,Caminho):- ocupacaoEncomenda(Caminho,Soma), Soma == 1.
+caminho(X,Z,Visitado,Caminho):- percurso(X,Y,_), \+ member(Y,Visitado), 
+caminho(Y,Z,[Y | Visitado],Caminho).
