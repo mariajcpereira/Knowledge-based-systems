@@ -60,3 +60,10 @@ caminhoMaisLongo(X,Y,Caminho):- retractall(comprimento(_,_)), listaCaminhos(X,Y,
 gerarDistanciasCaminhos(Lista), maisLongo(Caminho).
 
 maisLongo(Caminho):- comprimento(Caminho, V), \+ (comprimento(_, V1), V1 > V).
+
+
+%CaminhoMaisVantajoso
+caminhoMaisVantajoso(X,Y,Caminho):- retractall(clientes(_,_)), listaCaminhos(X,Y,Lista), 
+gerarClientes(Lista),!, maisVantajoso(Caminho).
+
+maisVantajoso(Caminho):- clientes(Caminho, V), \+ (clientes(_, V1), V1 > V).
