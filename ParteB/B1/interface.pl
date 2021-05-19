@@ -1,7 +1,5 @@
 :-[search, basedados].
 
-
-
 initial(restaurante). % ponto de partida
 
 %calcularDistancia(cliente1, cliente2, Distancia)
@@ -41,7 +39,7 @@ comecar:-	write('***************************************************************
 			(C == 4), assert(goal(cliente4)), tipoProcura;
 			(C == 5), assert(goal(cliente5)), tipoProcura).
 
-execute(Method):- search(Method,Par,S).			
+execute(Method):- search(Method,Par,Solution).			
 
 tipoProcura:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de procura deseja aplicar nesta entrega?'), nl,
