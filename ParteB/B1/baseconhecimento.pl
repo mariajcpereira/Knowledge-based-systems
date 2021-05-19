@@ -46,6 +46,22 @@ caminho(X,X,Caminho,Caminho):- ocupacaoEncomenda(Caminho,Soma), Soma == 1.
 caminho(X,Z,Visitado,Caminho):- percurso(X,Y,_), \+ member(Y,Visitado), 
 caminho(Y,Z,[Y | Visitado],Caminho).
 
+
+
+%TempoCaminhoMinALTERAR
+
+calcularTempoMin(Caminho):- guardarDistancia(Caminho), guardarOcupacaoEncomenda(Caminho), 
+ocupacao(Caminho, OcupacaoCaminho), comprimento(Caminho, DistanciaCaminho), 
+assertz(clientes(Caminho, OcupacaoCaminho / DistanciaCaminho)).
+
+gerarClientes([]).
+gerarClientes([C1|R1]):- calcularClientes(C1), gerarClientes(R1).
+
+clientesCaminho(Caminho, Indice):- guardarDistancia(Caminho), guardarOcupacaoEncomenda(Caminho), 
+ocupacao(Caminho, OcupacaoCaminho), comprimento(Caminho, DistanciaCaminho), Indice is OcupacaoCaminho / DistanciaCaminho.
+
+
+
 %QuestoesDoUtilizador
 
 %CaminhoMaisCurto
