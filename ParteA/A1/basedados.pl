@@ -1,7 +1,5 @@
-
 %basedados
 /*refeicao(nome_restaurante, categoria(1,2,3), localizacao(1,2), classificacao, preço_medio_p_pessoa, take_away, entrega)*/
-
 
 refeicao('As Manas', [portuguesa], [braga], muito_bom, acessivel, takeaway_sim, entrega_sim).
 refeicao('Bibo Porto', [portuguesa, churrasco], [braga], muito_bom, medio, takeaway_nao, entrega_sim).
