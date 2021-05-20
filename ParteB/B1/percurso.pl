@@ -4,21 +4,7 @@
 %   state representation: S, where S is a list with the full path followed by the person 
 initial([restaurante]). % initial city
 
-goal(X):- member(cliente1,X),member(cliente2,X). % destination city
 
-% --- knowledge base:
-%percurso(Origem, Destino, DistanciaEmMin)
-percurso(restaurante, cliente1, 5).
-percurso(cliente1, cliente2, 5).
-percurso(cliente1, cliente4, 5).
-percurso(cliente1, cliente5, 5).
-percurso(cliente2, cliente3, 3).
-percurso(cliente2, cliente4, 2).
-percurso(cliente2, cliente5, 2).
-percurso(cliente3, cliente4, 4).
-percurso(cliente3, cliente5, 5).
-percurso(restaurante, cliente4, 7).
-% travel(City1,City2,distance):
 travel(X,Y,D):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
 
 % state transition rule s/2: s(City1,City2)
