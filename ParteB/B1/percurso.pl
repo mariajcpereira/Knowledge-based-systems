@@ -1,4 +1,4 @@
-:-[search].
+:-[search, basedados].
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
