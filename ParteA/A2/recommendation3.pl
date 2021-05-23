@@ -18,6 +18,6 @@ adiciona(X, L, [X|L]).
 
 add(A):- lista(L), adiciona(A, L, L2), retract(lista(L)), assert(lista(L2)).
 
-lista_refeicao(R,LR):- lista(C), classify(C,Class), verrefeicao(R,[Class|_],L, findall((R,T), member(refeicao(R,T),L), LR).
+lista_refeicao(R,LR):- lista(C), classify(C,Class), verrefeicao(R,[Class|_],L), findall((R,T), member(refeicao(R,T),L), LR).
 
 escolhe:- lista_refeicao(R,LR), write(R), nl, write(LR), nl, nl, fail.
