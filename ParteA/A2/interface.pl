@@ -87,20 +87,7 @@ questao5:- 	write('*************************************************************
 			write('**  2 - Não'),nl, nl,
 			read(A5),nl,
 		    (
-		    (A5 == 1), add(custo_entrega=sim), nl, resultado;
-		    (A5 == 2), add(custo_entrega=nao), nl, resultado.			
+		    (A5 == 1), add(custo_entrega=sim), nl, escolhe;
+		    (A5 == 2), add(custo_entrega=nao), nl, escolhe.			
 			
 			
-resultado :- 	write('********************************************************************************************************'), nl,
-				write('**                                                                                                    **'), nl,			 
-				write('**                                         Resultado Obtido                                           **'), nl, 
-				write('**                                                                                                    **'), nl,			 
-				write('********************************************************************************************************'),
-				result.
-
-resultadowrite(P):-	nl,
-					write('     O seu perfil e o'),nl,
-					write('     *** '),write(escolhe),write(' ***'),nl,nl,
-					write('     Restaurantes aconselhados: '), escolhe ,nl,nl,
-					write('********************************************************************************************************'),
-					retractall(fact(_)).
