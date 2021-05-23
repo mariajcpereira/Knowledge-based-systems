@@ -4,12 +4,15 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
-initial([restaurante]). % initial city
+initial([restaurante]). 
+initial(sol([E],[R])):- restaurant(R,LE,_), random_member(E,LE). % initial destination
 
+
+goal(sol([E2],LC)):- last(LC,E2). % last destination
 
 travel(X,Y,D):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
 
-% state transition rule s/2: s(City1,City2)
+% state transition rule s/2: s(Cliente1,Cliente2)
 s(L1,L2):- last(L1,N1),travel(N1,N2,_),append(L1,[N2],L2). % link s(O,D,Dist) with s(O,D)
 
 % evaluation function: (sum of distances for all pairs)
