@@ -3,7 +3,7 @@
 
 lista([]).
 
-:- initialization(menu).
+%:- initialization(menu).
 
 menu:- nl,nl , 	write('********************************************************************************************************'), nl,
 				write('           O que lhe apetece hoje? Temos aqui um guia de restaurantes para si! Antes de iniciar, qual o seu nome?'),nl,
@@ -94,7 +94,7 @@ questao5:- 	write('*************************************************************
 			write('**  Pretende pagar custo de entrega?'), nl,
 			write('**'),nl,
 			write('**  1 - Sim'),nl, 
-			write('**  2 - Não'),nl, nl,
+			write('**  2 - Nao'),nl, nl,
 			read(A5),nl,
 		    (
 		    (A5 == 1), add(custo_entrega=sim), nl, escolhe;
