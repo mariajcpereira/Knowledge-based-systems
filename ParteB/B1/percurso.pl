@@ -23,7 +23,7 @@ eval([Cliente1,Cliente2|R],DS):-
 	DS is D+DR.
 
 % execute and show a search method result:
-run(Method):- search(Method,Par,S), nl, nl
+run(Method):- search(Method,Par,S), nl, nl,
 	write('********************************************************************************************************'), nl,
         write('                                                                                                        '), nl,
         write('                                        Percurso Aconselhado                                            '), nl,
