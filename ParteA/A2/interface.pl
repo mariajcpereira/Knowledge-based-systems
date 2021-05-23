@@ -1,5 +1,7 @@
 :-dynamic(fact/1),
-[forward, basedados, proof, baseconhecimento].
+[forward, recommendation3, proof].
+
+lista([]).
 
 :- initialization(menu).
 
@@ -26,28 +28,19 @@ avaliarEscolha(2):- write('Foi um prazer ajuda-lo!'), halt.
 avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de novo'), menu.
 
 	    
-questao1:-	write('********************************************************************************************************'), nl,
-			write('**  Deseja um restaurante de Braga ou Guimaraes?'), nl,
-			write('**'),nl,
-			write('**  1 - Braga'), nl,
-			write('**  2 - Guimaraes'), nl,nl,
-			read(A1),
-			(
-			(A1 == 1),assert(fact(braga)), questao2;
-            (A1 == 2),assert(fact(guimaraes)), questao2).
 	    
-questao2:-	write('********************************************************************************************************'), nl,
+questao1:-	write('********************************************************************************************************'), nl,
 			write('**  Gostaria de levantar o pedido ou que seja entregue a sua casa?'), nl,
 			write('**'),nl,
 			write('**  1 - TakeAway'), nl,
 			write('**  2 - Entrega'), nl,nl,
 			read(A2),
 			(
-			(A2 == 1),assert(fact(takeaway_sim)), questao3;
-            (A2 == 2),assert(fact(entrega_sim)), questao3).
+			(A1 == 1),add(takeaway=sim), nl, questao2;
+            (A1 == 2),add(takeaway=nao), nl, questao2).
 	    
 			
-questao3:-	write('********************************************************************************************************'), nl,
+questao2:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
 			write('**'),nl,
 			write('**  1 - Portuguesa'), nl,
@@ -58,16 +51,20 @@ questao3:-	write('**************************************************************
 			write('**  6 - Italiana'), nl,
 			write('**  7 - Saudavel'), nl,
 			write('**  8 - Mexicana'), nl,
+			write('**  9 - Pizza'), nl,
+			write('**  10 - Sushi'), nl,
 			read(A3),
 			(
-			(A3 == 1), assert(fact(portuguesa)), questao4;
-            (A3 == 2), assert(fact(churrasco)), questao4;
-            (A3 == 3), assert(fact(hamburgueres)), questao4;
-            (A3 == 4), assert(fact(sanduiches)), questao4;
-            (A3 == 5), assert(fact(japonesa)), questao4;
-            (A3 == 6), assert(fact(sushi)), questao4;
-            (A3 == 7), assert(fact(pizza)), questao4;
-            (A3 == 8), assert(fact(italiana)), questao4).
+			(A3 == 1), add(categoria=portuguesa), nl, questao4;
+            (A3 == 2), add(categoria=churrasco), nl,questao4;
+            (A3 == 3), add(categoria=hamburgueres), nl, questao4;
+            (A3 == 4), add(categoria=sanduiches), nl, questao4;
+            (A3 == 5), add(categoria=japonesa), nl, questao4;
+            (A3 == 6), add(categoria=italina), nl, questao4;
+            (A3 == 7), add(categoria=saudavel), nl, questao4;
+	    (A3 == 8), add(categoria=mexicana), nl, questao4;
+            (A3 == 9), add(categoria=pizza), nl, questao4;
+            (A3 == 10), add(categoria=sushi), nl, questao4).
 			
 
 questao4:- 	write('********************************************************************************************************'), nl,
@@ -78,9 +75,20 @@ questao4:- 	write('*************************************************************
 			write('**  3 - Preco elevado'),nl, nl,
 			read(A4),nl,
 		    (
-		    (A4 == 1), assert(fact(acessivel)), resultado;
-		    (A4 == 2), assert(fact(medio)), resultado;
-			(A4 == 3), assert(fact(caro)), resultado).
+		    (A4 == 1), add(custo_medio=acessivel), nl, questao5;
+		    (A4 == 2), add(custo_medio=medio), nl, questao5;
+			(A4 == 3), add(custo_medio=caro), nl, questao5).
+			
+
+questao5:- 	write('********************************************************************************************************'), nl,
+			write('**  Pretende pagar custo de entrega?'), nl,
+			write('**'),nl,
+			write('**  1 - Sim'),nl, 
+			write('**  2 - Não'),nl, nl,
+			read(A5),nl,
+		    (
+		    (A5 == 1), add(custo_entrega=sim), nl, resultado;
+		    (A5 == 2), add(custo_entrega=nao), nl, resultado.			
 			
 			
 resultado :- 	write('********************************************************************************************************'), nl,
@@ -92,7 +100,7 @@ resultado :- 	write('***********************************************************
 
 resultadowrite(P):-	nl,
 					write('     O seu perfil e o'),nl,
-					write('     *** '),write(P),write(' ***'),nl,nl,
-					write('     Restaurantes aconselhados: '),perfil(P),nl,nl,
+					write('     *** '),write(escolhe),write(' ***'),nl,nl,
+					write('     Restaurantes aconselhados: '), escolhe ,nl,nl,
 					write('********************************************************************************************************'),
 					retractall(fact(_)).
