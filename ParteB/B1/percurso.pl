@@ -6,10 +6,9 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 %   state representation: S, where S is a list with the full path followed by the person 
 initial(sol([E],[R])):- restaurant(R,LE,_), random_member(E,LE). % initial destination
 
-
 goal(sol([E2],LC)):- last(LC,E2). % last destination
 
-travel(X,Y,D):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
+travel(X,Y,MIN):-(percurso(X,Y,MIN);percurso(Y,X,MIN)). % true if road or symmetrical
 
 % state transition rule s/2: s(Cliente1,Cliente2)
 s(sol(LE,LC),sol(LE,LC2)):- last(LC,C), travel(C,C2,_), \+ member(C2,LC), append(LC,[C2],LC2). % link s(O,D,Dist) with s(O,D)
