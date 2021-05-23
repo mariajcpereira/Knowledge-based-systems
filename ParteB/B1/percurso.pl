@@ -4,7 +4,6 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
-initial([restaurante]). 
 initial(sol([E],[R])):- restaurant(R,LE,_), random_member(E,LE). % initial destination
 
 
