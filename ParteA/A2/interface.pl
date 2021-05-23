@@ -30,17 +30,27 @@ avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de n
 	    
 	    
 questao1:-	write('********************************************************************************************************'), nl,
-			write('**  Gostaria de levantar o pedido ou que seja entregue a sua casa?'), nl,
+			write('**  Gostaria da possibilidade de servico takeaway?'), nl,
 			write('**'),nl,
-			write('**  1 - TakeAway'), nl,
-			write('**  2 - Entrega'), nl,nl,
-			read(A2),
+			write('**  1 - Sim'), nl,
+			write('**  2 - Nao'), nl,nl,
+			read(A1),
 			(
 			(A1 == 1),add(takeaway=sim), nl, questao2;
             (A1 == 2),add(takeaway=nao), nl, questao2).
 	    
-			
 questao2:-	write('********************************************************************************************************'), nl,
+			write('**  Gostaria que o seu pedido fosse entregue a sua casa?'), nl,
+			write('**'),nl,
+			write('**  1 - Sim'), nl,
+			write('**  2 - Nao'), nl,nl,
+			read(A2),
+			(
+			(A2 == 1),add(entrega=sim), nl, questao3;
+            (A2 == 2),add(entrega=nao), nl, questao3).	  
+	    
+			
+questao3:-	write('********************************************************************************************************'), nl,
 			write('**  Que tipo de alimentacao deseja? Destas opcoes, introduza o numero correspondente:'), nl,
 			write('**'),nl,
 			write('**  1 - Portuguesa'), nl,
