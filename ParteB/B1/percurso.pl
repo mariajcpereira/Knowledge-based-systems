@@ -14,9 +14,9 @@ s(L1,L2):- last(L1,N1),travel(N1,N2,_),append(L1,[N2],L2). % link s(O,D,Dist) wi
 
 % evaluation function: (sum of distances for all pairs)
 eval([_],0).
-eval([City1,City2|R],DS):- 
-	travel(City1,City2,D),
-	eval([City2|R],DR),
+eval([Cliente1,Cliente2|R],DS):- 
+	travel(Cliente1,Cliente2,D),
+	eval([Cliente2|R],DR),
 	DS is D+DR.
 
 % execute and show a search method result:
