@@ -88,6 +88,6 @@ questao5:- 	write('*************************************************************
 			read(A5),nl,
 		    (
 		    (A5 == 1), add(custo_entrega=sim), nl, escolhe;
-		    (A5 == 2), add(custo_entrega=nao), nl, escolhe.			
+		    (A5 == 2), add(custo_entrega=nao), nl, escolhe).			
 			
 			
