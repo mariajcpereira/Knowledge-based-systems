@@ -1,7 +1,5 @@
 :-[search, percurso].
 
-:- initialization(inicio).
-
 inicio:- nl,nl ,write('*********************************************************************************************************'), nl,
 				write('                                                                                                          '), nl,			 
 				write('                   ACONSELHAMENTO DE TRAJETO PARA ENTREGA DE UMA REFEICAO 				'), nl,              
