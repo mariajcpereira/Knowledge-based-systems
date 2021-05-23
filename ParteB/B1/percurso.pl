@@ -1,4 +1,4 @@
-:-[search, basedados, baseconhecimento].
+:-[search, basedados].
 
 restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,5,7]).
 
@@ -13,7 +13,7 @@ goal(sol([E2],LC)):- last(LC,E2). % last destination
 travel(X,Y,D):-(percurso(X,Y,D);percurso(Y,X,D)). % true if road or symmetrical
 
 % state transition rule s/2: s(Cliente1,Cliente2)
-s(L1,L2):- last(L1,N1),travel(N1,N2,_),append(L1,[N2],L2). % link s(O,D,Dist) with s(O,D)
+s(sol(LE,LC),sol(LE,LC2)):- last(LC,C), travel(C,C2,_), \+ member(C2,LC), append(LC,[C2],LC2). % link s(O,D,Dist) with s(O,D)
 
 % evaluation function: (sum of distances for all pairs)
 eval([_],0).
@@ -23,12 +23,32 @@ eval([Cliente1,Cliente2|R],DS):-
 	DS is D+DR.
 
 % execute and show a search method result:
-run(Method):- search(Method,Par,S),
-	      write('method:'),write(Method),writepar(Par),nl,
-              write('solution:'),write(S),nl,
-	      length(S,N),N1 is N-1,write('solution steps:'),write(N1),nl,
+run(Method):- search(Method,Par,S), nl, nl
+ write('********************************************************************************************************'), nl,
+          write('                                                                                                        '), nl,
+          write('                                        Percurso Aconselhado                                            '), nl,
+          write('                                                                                                        '), nl,
+          write('********************************************************************************************************'), nl,
+	      write('Metodo:'),write(Method),writepar(Par),nl,
+	      last(S,Q),
+              write('Entregar para:'),writeEntrega(Q),nl,
+              write('Solucao:'),writePercurso(S),nl,
+	      length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
               last(S,LS),
-              eval(LS,D),write('distance:'),write(D).
+              eval(LS,D),write('Distancia:'),write(D)
+	      write('Lucro:'), writeLucro(Q), nl, 
+	      write('Tempo de percurso:'), writeTempo(Q).
+	      
+writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
+
+writeEntrega(sol(LE,_)):- write(LE).
+
+writePecurso(sol(_,LC)):- write(LC).
+
+writeLucro(sol(LE,_)):- member(A,LE),
+lucro(A,Y), write(Y).	      
+	      
+	      
 % write parameter (if any):
 writepar(X):- integer(X),write(' par:'),write(X). % write X
 writepar(_). % do not write X
