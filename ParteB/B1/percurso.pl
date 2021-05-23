@@ -32,8 +32,6 @@ run(Method):- search(Method,Par,S), nl, nl,
               write('Entregar para:'),writeEntrega(Q),nl,
               write('Solucao:'),writePercurso(S),nl,
 	      length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
-              last(S,LS),
-              eval(LS,D),write('Distancia:'),write(D),
 	      write('Lucro:'), writeLucro(Q), nl, 
 	      write('Tempo de percurso:'), writeTempo(Q).
 	      
