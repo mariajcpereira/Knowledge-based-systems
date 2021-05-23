@@ -24,11 +24,11 @@ eval([Cliente1,Cliente2|R],DS):-
 
 % execute and show a search method result:
 run(Method):- search(Method,Par,S), nl, nl
- write('********************************************************************************************************'), nl,
-          write('                                                                                                        '), nl,
-          write('                                        Percurso Aconselhado                                            '), nl,
-          write('                                                                                                        '), nl,
-          write('********************************************************************************************************'), nl,
+	write('********************************************************************************************************'), nl,
+        write('                                                                                                        '), nl,
+        write('                                        Percurso Aconselhado                                            '), nl,
+        write('                                                                                                        '), nl,
+        write('********************************************************************************************************'), nl,
 	      write('Metodo:'),write(Method),writepar(Par),nl,
 	      last(S,Q),
               write('Entregar para:'),writeEntrega(Q),nl,
