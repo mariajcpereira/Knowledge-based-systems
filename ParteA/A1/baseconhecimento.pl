@@ -1,4 +1,3 @@
-
 %perfis
 
 if portuguesa and guimaraes and acessivel and (takeaway_sim or entrega_sim) then 1.
