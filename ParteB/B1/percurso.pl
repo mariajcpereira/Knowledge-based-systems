@@ -1,4 +1,4 @@
-:-[search, basedados].
+:-[search, basedados, baseconhecimento].
 
 restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,5,7]).
 
