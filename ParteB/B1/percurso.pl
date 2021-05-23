@@ -39,7 +39,7 @@ writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
 
 writeEntrega(sol(LE,_)):- write(LE).
 
-writePecurso(sol(_,LC)):- write(LC).
+writePercurso(sol(_,LC)):- write(LC).
 
 writeLucro(sol(LE,_)):- member(A,LE),
 lucro(A,Y), write(Y).	      
