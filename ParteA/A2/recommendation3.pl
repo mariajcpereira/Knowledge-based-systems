@@ -1,4 +1,4 @@
-:-[satisfy,induce_ifthen,recommendation2, basedados].
+:-[satisfy,induce_ifthen,recommendation2].
 
 % the goal is to classify recommendation
 learn_rules:-
