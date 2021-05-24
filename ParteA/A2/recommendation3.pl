@@ -10,18 +10,14 @@ learn_rules:-
 	told.
 
 % example of classifying `new' objects:
-%list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim]).
+list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim]).
 
-list([categoria,custo_medio,takeaway,entrega, custo_entrega]).
-
-q1:- lista(L), classify(L,Class), write(Class).
+q1(Class):- list(L), classify(L,Class).
 
 adiciona(X, L, [X|L]).
 
 add(A):- lista(L), adiciona(A, L, L2), retract(lista(L)), assert(lista(L2)).
 
-%lista_refeicao(N,L,LR):- lista(C), verrefeicao(N,[Class|_],L,T,E,W), findall((N,T), membro(refeicao(N,T),L), LR).
+%lista_refeicao(R,LR):- lista(C), classify(C,Class), restaurante(R,[Class|_],L),findall(Nome,Preco), member(refeicao(Nome,Preco),L), LR).
 
 escolhe:- q1, write(R), nl, write(LR), nl, nl, fail.
-
-%lista_refeicao(R,LR), 
