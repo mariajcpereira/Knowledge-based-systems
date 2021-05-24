@@ -1,7 +1,7 @@
 :-dynamic(lista/1),
 [forward, recommendation3, proof].
 
-lista([]).
+list([]).
 
 %:- initialization(menu).
 
