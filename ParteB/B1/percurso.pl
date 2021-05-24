@@ -1,4 +1,4 @@
-:-[search, basedados], dynamic(goal/1).
+:-[search, basedados].
 
 restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,9,10]).
 
@@ -11,7 +11,7 @@ goal(sol([E],LC)):- last(LC,E). % last destination
 travel(X,Y,MIN):-(percurso(X,Y,MIN);percurso(Y,X,MIN)). % true if road or symmetrical
 
 % state transition rule s/2: s(Cliente1,Cliente2)
-s(sol(LE,LC),sol(LE,LC2)):- last(LC,C), travel(C,C2,_), \+ member(C2,LC), append(LC,[C2],LC2), write(LC). % link s(O,D,Dist) with s(O,D)
+s(sol(LE,LC),sol(LE,LC2)):- last(LC,C), travel(C,C2,_), \+ member(C2,LC), append(LC,[C2],LC2). % link s(O,D,Dist) with s(O,D)
 
 % evaluation function: (sum of distances for all pairs)
 eval([_],0).
