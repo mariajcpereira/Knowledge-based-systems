@@ -36,14 +36,15 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Lucro:'), writeLucro(Q), nl, 
 	      write('Tempo de percurso:'), writeTempo(Q).
+
 	      
-tempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
+writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
 
 writeEntrega(sol(LE,_)):- write(LE).
 
 writePercurso(sol(_,LC)):- write(LC).
 
-lucro(sol(LE,_)):- member(A,LE),
+writeLucro(sol(LE,_)):- member(A,LE),
 entrega(A,Y), write(Y).	      
 	      
 	      
