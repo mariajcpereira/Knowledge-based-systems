@@ -1,5 +1,5 @@
 :-dynamic(lista/1),
-[forward, recommendation3, proof].
+[recommendation3].
 
 lista([]).
 
