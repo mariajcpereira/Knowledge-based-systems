@@ -14,6 +14,8 @@ list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo
 
 q1:- list(L), classify(L,Class), write(Class).
 
+q2:- classify([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim], X), write(X).
+
 adiciona(X, L, [X|L]).
 
 add(A):- lista(L), adiciona(A, L, L2), retract(lista(L)), assert(lista(L2)).
