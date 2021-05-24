@@ -1,6 +1,8 @@
 :-dynamic(lista/1),
 [recommendation3].
 
+learn_rules.
+
 lista([]).
 
 %:- initialization(menu).
