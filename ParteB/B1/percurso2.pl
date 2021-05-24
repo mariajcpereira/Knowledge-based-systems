@@ -4,9 +4,9 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
-initial(sol([E],[R])):- restaurant(R,LE,_), random_member(E,LE). % initial destination
+initial(sol([E],[R])):- restaurant(R,LE,_), random_member(E,LE), random_member(E2,L2), E\==E2. % initial destination
 
-goal(sol([E],LC)):- last(LC,E). % last destination
+goal(sol([E],LC)):- member(E,LC), member(E2,LC), last(LC,E2). % last destination
 
 travel(X,Y,MIN):-(percurso(X,Y,MIN);percurso(Y,X,MIN)). % true if road or symmetrical
 
@@ -33,7 +33,7 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      last(S,Q),
               write('Entregar para:'),writeEntrega(Q),nl,
               write('Solucao:'),writePercurso(S),nl,
-	      length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
+	      %length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Lucro:'), writeLucro(Q), nl, 
 	      write('Tempo de percurso:'), writeTempo(Q).
 
@@ -44,8 +44,10 @@ writeEntrega(sol(LE,_)):- write(LE).
 
 writePercurso(sol(_,LC)):- write(LC).
 
-writeLucro(sol(LE,_)):- member(A,LE),
-entrega(A,Y), write(Y).	      
+writeLucro(sol(LE,_)):- member(A,LE), member(B,LE), B\==A,
+entrega(A,Y),
+entrega(B,Z), 
+W is Y+Z, write(W).	      
 	      
 	      
 % write parameter (if any):
