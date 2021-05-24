@@ -1,4 +1,4 @@
-:-dynamic(lista/1), dynamic(lear_rules/1),
+:-dynamic(lista/1), dynamic(learn_rules/1),
 [recommendation3, forward, satisfy].
 
 learn_rules.
