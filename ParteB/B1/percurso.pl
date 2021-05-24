@@ -22,7 +22,7 @@ eval([Cliente1,Cliente2|R],DS):-
 
 run(Method):- search(Method,Par,S),
               writepar(Par),
-              last(S,Q),nl, write('Cliente: '), entrega(Q),nl,
+              last(S,Q),nl, write('Cliente: '), writeEntrega(Q),nl,
               write('Caminho: '), write(S),nl,
               %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
               write('Tempo: '), tempo(Q), nl,
@@ -45,7 +45,7 @@ run(Method):- search(Method,Par,S),
 	      
 tempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
 
-entrega(sol(LE,_)):- write(LE).
+writeEntrega(sol(LE,_)):- write(LE).
 
 %writePercurso(sol(_,LC)):- write(LC).
 
