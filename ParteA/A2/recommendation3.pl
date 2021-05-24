@@ -20,4 +20,4 @@ add(A):- lista(L), adiciona(A, L, L2), retract(lista(L)), assert(lista(L2)).
 
 %lista_refeicao(R,LR):- lista(C), classify(C,Class), restaurante(R,[Class|_],L),findall(Nome,Preco), member(refeicao(Nome,Preco),L), LR).
 
-escolhe:- q1, write(R), nl, write(LR), nl, nl, fail.
+escolhe:- q1, nl, nl, fail.
