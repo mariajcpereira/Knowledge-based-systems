@@ -5,8 +5,6 @@ entrega(cliente3, 7).
 entrega(cliente4, 9).
 entrega(cliente5, 10).
 
-
-
 %percurso(Origem, Destino, DistanciaEmMin)
 percurso(restaurante, cliente1, 5).
 percurso(cliente1, cliente2, 5).
@@ -18,8 +16,6 @@ percurso(cliente2, cliente5, 2).
 percurso(cliente3, cliente4, 4).
 percurso(cliente3, cliente5, 5).
 percurso(restaurante, cliente4, 7).
-
-
 
 %arco(Origem, Destino)
 arco(restaurante, cliente1).
