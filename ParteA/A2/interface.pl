@@ -1,9 +1,10 @@
 :-dynamic(lista/1), 
 [recommendation3, forward, satisfy].
+:- use_module(library(theme/dark)).
 
 lista([]).
 
-%:- initialization(menu).
+:- initialization(menu).
 
 menu:- nl,nl , 	write('********************************************************************************************************'), nl,
 				write('           O que lhe apetece hoje? Temos aqui um guia de restaurantes para si! Antes de iniciar, qual o seu nome?'),nl,
