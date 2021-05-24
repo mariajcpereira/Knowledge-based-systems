@@ -1,5 +1,5 @@
 :-dynamic(lista/1),
-[recommendation3].
+[recommendation3, forward, satisfy].
 
 learn_rules.
 
