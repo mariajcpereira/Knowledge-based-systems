@@ -1,4 +1,4 @@
-:-dynamic(lista/1),
+:-dynamic(list/1),
 [forward, recommendation3, proof].
 
 list([]).
