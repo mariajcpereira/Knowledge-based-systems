@@ -1,5 +1,6 @@
 :-dynamic(fact/1),
 [forward, basedados, proof, baseconhecimento].
+:- use_module(library(theme/dark)).
 
 :- initialization(menu).
 
