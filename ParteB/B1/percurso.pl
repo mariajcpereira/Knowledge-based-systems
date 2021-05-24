@@ -1,6 +1,6 @@
 :-[search, basedados], dynamic(goal/1).
 
-restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,9,10,7]).
+restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,9,10]).
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
