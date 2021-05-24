@@ -50,7 +50,7 @@ writeEntrega(sol(LE,_)):- write(LE).
 %writePercurso(sol(_,LC)):- write(LC).
 
 lucro(sol(LE,_)):- member(A,LE),
-lucro(A,Y), write(Y).	      
+entrega(A,Y), write(Y).	      
 	      
 	      
 % write parameter (if any):
