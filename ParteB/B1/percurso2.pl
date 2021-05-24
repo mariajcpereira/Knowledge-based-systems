@@ -2,8 +2,8 @@
 :- [basedados,search].
 :- dynamic(goal/1).
 
-%fact inicial caixas(id,size, profit)
-caixas([[1,4,5,7],[2,3,3.5,6],[3,6,8,2]]).
+%fact inicial restaurant(inicio,paragens, lucro)
+restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,9,10]).
 %Codigo da net (stackoverflow - http://stackoverflow.com/questions/8519203/prolog-replace-an-element-in-a-list-at-a-specified-index)
 %replace(+List,+Index,+Value,-NewList).
 
