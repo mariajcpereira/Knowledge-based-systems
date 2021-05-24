@@ -33,21 +33,21 @@ if mexicana and braga and caro and (takeaway_sim or entrega_sim) then 30.
 if japonesa and braga and acessivel and (takeaway_sim or entrega_sim) then 31.
 if japonesa and braga and medio and (takeaway_sim or entrega_sim) then 32.
 if japonesa and braga and caro and (takeaway_sim or entrega_sim) then 33.
-if hamburgueres and braga and acessivel and takeaway_sim and entrega_sim then 34.
+if hamburgueres and braga and acessivel and (takeaway_sim or entrega_sim) then 34.
 if hamburgueres and braga and acessivel and takeaway_nao and entrega_sim then 35.
-if hamburgueres and braga and medio and takeaway_nao and entrega_sim then 36.
-if hamburgueres and braga and medio and takeaway_sim and entrega_sim then 37.
-if hamburgueres and braga and caro and takeaway_nao and entrega_sim then 38.
-if hamburgueres and braga and caro and takeaway_sim and entrega_sim then 39.
-if italiana and braga and acessivel and takeaway_sim and entrega_sim then 40.
+if hamburgueres and braga and medio and (takeaway_nao or entrega_sim) then 36.
+if hamburgueres and braga and medio and (takeaway_sim or entrega_sim) then 37.
+if hamburgueres and braga and caro and (takeaway_nao or entrega_sim) then 38.
+if hamburgueres and braga and caro and (takeaway_sim or entrega_sim) then 39.
+if italiana and braga and acessivel and (takeaway_sim or entrega_sim) then 40.
 if italiana and braga and acessivel and takeaway_nao and entrega_sim then 41.
-if italiana and braga and medio and takeaway_sim and entrega_sim then 42.
-if italiana and braga and caro and takeaway_sim and entrega_sim then 43.
-if churrasco and braga and acessivel and takeaway_sim and entrega_sim then 44.
-if churrasco and braga and medio and takeaway_nao and entrega_sim then 45.
-if churrasco and braga and medio and takeaway_sim and entrega_sim then 46.
-if churrasco and braga and caro and takeaway_sim and entrega_sim then 47.
-if sanduiches and braga and acessivel and takeaway_sim and entrega_sim then 48.
+if italiana and braga and medio and (takeaway_sim or entrega_sim) then 42.
+if italiana and braga and caro and (takeaway_sim or entrega_sim) then 43.
+if churrasco and braga and acessivel and (takeaway_sim or entrega_sim) then 44.
+if churrasco and braga and medio and (takeaway_nao or entrega_sim) then 45.
+if churrasco and braga and medio and (takeaway_sim or entrega_sim) then 46.
+if churrasco and braga and caro and (takeaway_sim or entrega_sim) then 47.
+if sanduiches and braga and acessivel and (takeaway_sim or entrega_sim) then 48.
 if saudavel and guimaraes then 49.
 if saudavel and braga and acessivel then 50.
 if saudavel and braga and caro then 51.
