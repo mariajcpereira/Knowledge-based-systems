@@ -12,7 +12,7 @@ learn_rules:-
 % example of classifying `new' objects:
 list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim]).
 
-q1(Class):- list(L), classify(L,Class).
+q1:- list(L), classify(L,Class), write(Class).
 
 adiciona(X, L, [X|L]).
 
