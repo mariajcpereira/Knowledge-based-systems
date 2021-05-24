@@ -1,5 +1,5 @@
-%73854
-:- [auxiliar,hill,search].
+
+:- [basedados,search].
 :- dynamic(goal/1).
 
 %fact inicial caixas(id,size, profit)
