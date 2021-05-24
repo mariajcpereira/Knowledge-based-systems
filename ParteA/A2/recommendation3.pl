@@ -10,7 +10,9 @@ learn_rules:-
 	told.
 
 % example of classifying `new' objects:
-list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim]).
+%list([categoria=portuguesa,custo_medio=acessivel,takeaway=nao,entrega=sim, custo_entrega=sim]).
+
+list([categoria,custo_medio,takeaway,entrega, custo_entrega]).
 
 q1(Class):- list(L), classify(L,Class).
 
