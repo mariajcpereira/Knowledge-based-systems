@@ -40,7 +40,7 @@ run(Method):- search(Method,Par,S), nl, nl,
         write('********************************************************************************************************'), nl,
 	      write('Metodo: '),write(Method),writepar(Par),nl,
               write('Entregar para: '),writeEntrega(Q),nl,
-              write('Solucao:'),writePercurso(S),nl,
+              write('Solucao:'),write(S),nl,
 	      length(S,N),N1 is N-1,write('Percurso: '),write(N1),nl,
 	      last(S,Q),
 	      eval(Q,D),tempo(D,Z),write('Tempo de percurso: '), write(Z), write('minutos'), nl,
@@ -62,7 +62,6 @@ run(Method):- search(Method,Par,S), nl, nl,
 
 writeEntrega(sol(LE,_)):- write(LE).
 
-writePercurso(sol(_,LC)):- write(LC).
 
 /*entrega(sol(LE,_)):- member(A,LE),
 entrega(A,Y), write(Y).*/	      
