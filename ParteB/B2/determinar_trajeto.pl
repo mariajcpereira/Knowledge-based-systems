@@ -2,7 +2,7 @@
 :- set_prolog_flag(encoding, utf8).
 :- [basedados, caminho_mais_rapido, hillclimbing].
 
-restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,5,7]).
+restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,9,10]).
 
 % verifica qual é o metodo de pesquisa a utlizar e determina o melhor caminho de acordo com o metodo de pesquisa selecionado
 % adicionalmente seleciona para qql objetivo um cliente random para entrega
