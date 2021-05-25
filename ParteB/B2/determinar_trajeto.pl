@@ -1,6 +1,6 @@
 :-dynamic(resultado/1).
 :- set_prolog_flag(encoding, utf8).
-:- [base_ados, caminho_mais_rapido, hillclimbing].
+:- [basedados, caminho_mais_rapido, hillclimbing].
 
 restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,5,7]).
 
