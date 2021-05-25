@@ -28,8 +28,8 @@ lucro([Cliente1|R], Soma):-
 	lu(R,TotalD),
 	Soma is Total+TotalD.
 	
-guardarLucro(Caminho):- lucro(Caminho, Valor),
-assertz(entrega(Caminho, Valor)).
+guardarLucro(percurso):- lucro(percurso, Valor),
+assertz(entrega(percurso, Valor)).
 
 % execute and show a search method result:
 run(Method):- search(Method,Par,S), nl, nl,
