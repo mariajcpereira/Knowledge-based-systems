@@ -43,7 +43,7 @@ eval([Cliente1,Cliente2|R],DS):-
               write('Caminho: '), writePercurso(S),nl,
               %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
               write('Tempo: '), writeTempo(Q), nl,
-              write('Lucro: '), writeLucro(Q),nl, fail.
+              write('Lucro: '), entrega(Q),nl, fail.
 
 	      
 writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
@@ -52,7 +52,7 @@ writeEntrega(sol(LE,_)):- write(LE).
 
 writePercurso(sol(_,LC)):- write(LC).
 
-writeLucro(sol(LE,_)):- member(A,LE), member(B,LE), B\==A,
+entrega(sol(LE,_)):- member(A,LE), member(B,LE), B\==A,
 entrega(A,Y),
 entrega(B,Z), 
 W is Y+Z, write(W).	      
