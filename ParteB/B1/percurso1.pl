@@ -23,8 +23,8 @@ eval([Cliente1,Cliente2|R],DS):-
 tempo(X,Z):-Z is X+1. 
 
 lucro([],0).
-lucro([City|R], Soma):- 
-	entrega(City1,Total),
+lucro([Cliente1|R], Soma):- 
+	entrega(Cliente1,Total),
 	lu(R,TotalD),
 	Soma is Total+TotalD.
 	
