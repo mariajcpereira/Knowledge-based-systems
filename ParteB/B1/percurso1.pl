@@ -20,41 +20,52 @@ eval([Cliente1,Cliente2|R],DS):-
 	eval([Cliente2|R],DR),
 	DS is D+DR.
 
+tempo(X,Z):-Z is X+1. 
 
+lucro([],0).
+lucro([City|R], Soma):- 
+	entrega(City1,Total),
+	lu(R,TotalD),
+	Soma is Total+TotalD.
+	
+guardarLucro(Caminho):- lucro(Caminho, Valor),
+assertz(entrega(Caminho, Valor)).
 
 % execute and show a search method result:
-/*run(Method):- search(Method,Par,S), nl, nl,
+run(Method):- search(Method,Par,S), nl, nl,
 	write('********************************************************************************************************'), nl,
         write('                                                                                                        '), nl,
         write('                                        Percurso Aconselhado                                            '), nl,
         write('                                                                                                        '), nl,
         write('********************************************************************************************************'), nl,
-	      write('Metodo:'),write(Method),writepar(Par),nl,
-	      last(S,Q),
-              write('Entregar para:'),writeEntrega(Q),nl,
+	      write('Metodo: '),write(Method),writepar(Par),nl,
+              write('Entregar para: '),writeEntrega(Q),nl,
               write('Solucao:'),writePercurso(S),nl,
-	      length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
-	      write('Lucro:'), writeLucro(Q), nl, 
-	      write('Tempo de percurso:'), writeTempo(Q).*/
+	      length(S,N),N1 is N-1,write('Percurso: '),write(N1),nl,
+	      last(S,Q),
+	      eval(Q,D),tempo(D,Z),write('Tempo de percurso: '), write(Z), write('minutos'), nl,
+	      lucro(Q,R), write('Lucro: '), write(R), write('euros'), fail.
 	      
 	      
-	      run(Method):- search(Method,Par,S),
+	      /*run(Method):- search(Method,Par,S),
               writepar(Par),
               last(S,Q),nl, write('Cliente: '), writeEntrega(Q),nl,
               write('Caminho: '), writePercurso(S),nl,
               %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
               write('Tempo: '), writeTempo(Q), nl,
-              write('Lucro: '), entrega(Q),nl, fail.
+              write('Lucro: '), entrega(Q),nl, fail.*/
 
 	      
-writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
+
+
+%eval(LC,D), D2 is D+1,write(D2).
 
 writeEntrega(sol(LE,_)):- write(LE).
 
 writePercurso(sol(_,LC)):- write(LC).
 
-entrega(sol(LE,_)):- member(A,LE),
-entrega(A,Y), write(Y).	      
+/*entrega(sol(LE,_)):- member(A,LE),
+entrega(A,Y), write(Y).*/	      
 	      
 	      
 % write parameter (if any):
