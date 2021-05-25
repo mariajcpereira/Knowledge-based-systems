@@ -28,7 +28,7 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 % verifica qual é o metodo de pesquisa a utlizar e determina o melhor caminho de acordo com o metodo de pesquisa selecionado
 % adicionalmente seleciona para qql objetivo um cliente random para entrega
 resultado(Metodo) :-
-    (Metodo == 'mais_rapido', restaurant(_,LE,_), random_member(E,LE), nl,write('Entregar para:'),write(E),nl,nl, processo(restaurante, E));
+    (Metodo == 'percurso_', restaurant(_,LE,_), random_member(E,LE), nl,write('Entregar para:'),write(E),nl,nl, processo(restaurante, E));
     (Metodo == 'hillclimbing', restaurant(_,LE,_), random_member(E,LE), nl,write('Entregar para:'),write(E),nl,nl, demo(restaurante, E,_)).
 
 % retorna um caminho possivel entre a Origem e o Destino selecionados
