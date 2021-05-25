@@ -22,13 +22,13 @@ eval([Cliente1,Cliente2|R],DS):-
 
 tempo(X,Z):-Z is X+1. 
 
-lucro([],0).
-lucro([Cliente1|R], Soma):- 
-	entrega(Cliente1,Total),
+lu([],0).
+lu([Cliente1|R], Soma):- 
+	lucro(Cliente1,Total),
 	lu(R,TotalD),
 	Soma is Total+TotalD.
 	
-guardarLucro(percurso):- lucro(percurso, Valor),
+guardarLucro(percurso):- lu(percurso, Valor),
 assertz(entrega(percurso, Valor)).
 
 % execute and show a search method result:
@@ -44,7 +44,7 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      length(S,N),N1 is N-1,write('Percurso: '),write(N1),nl,
 	      last(S,Q),
 	      eval(Q,D),tempo(D,Z),write('Tempo de percurso: '), write(Z), write('minutos'), nl,
-	      lucro(Q,R), write('Lucro: '), write(R), write('euros'), fail.
+	      lu(Q,R), write('Lucro: '), write(R), write('euros'), fail.
 	      
 	      
 	      /*run(Method):- search(Method,Par,S),
