@@ -23,7 +23,7 @@ eval([Cliente1,Cliente2|R],DS):-
 
 
 % execute and show a search method result:
-run(Method):- search(Method,Par,S), nl, nl,
+/*run(Method):- search(Method,Par,S), nl, nl,
 	write('********************************************************************************************************'), nl,
         write('                                                                                                        '), nl,
         write('                                        Percurso Aconselhado                                            '), nl,
@@ -35,7 +35,15 @@ run(Method):- search(Method,Par,S), nl, nl,
               write('Solucao:'),writePercurso(S),nl,
 	      %length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Lucro:'), writeLucro(Q), nl, 
-	      write('Tempo de percurso:'), writeTempo(Q).
+	      write('Tempo de percurso:'), writeTempo(Q).*/
+	      
+	      run(Method):- search(Method,Par,S),
+              writepar(Par),
+              last(S,Q),nl, write('Cliente: '), writeEntrega(Q),nl,
+              write('Caminho: '), writePercurso(S),nl,
+              %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
+              write('Tempo: '), writeTempo(Q), nl,
+              write('Lucro: '), writeLucro(Q),nl, fail.
 
 	      
 writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
