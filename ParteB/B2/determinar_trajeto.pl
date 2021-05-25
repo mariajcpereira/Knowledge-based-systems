@@ -13,12 +13,12 @@ resultado(Metodo) :-
 % retorna um caminho possivel entre a Origem e o Destino selecionados
 caminho(X,Z,C):-caminho(X,Z,[X],C).
 caminho(X,X,Caminho,Caminho).
-caminho(X,Z,Percorrido,Caminho) :- road(X,Y,_),
+caminho(X,Z,Percorrido,Caminho) :- percurso(X,Y,_),
     \+ member(Y,Percorrido), append(Percorrido, [Y], Percorrido2),
     caminho(Y,Z, Percorrido2,Caminho).
 
 % verifica qual é a distancia total do caminho atual
 distancia_total([_],0).
-distancia_total([X,Y|Z],Total) :- road(X,Y,D1),
+distancia_total([X,Y|Z],Total) :- percurso(X,Y,D1),
     distancia_total([Y|Z],D2), Total is D1 + D2.
     
