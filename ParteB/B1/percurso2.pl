@@ -43,7 +43,8 @@ eval([Cliente1,Cliente2|R],DS):-
               write('Caminho: '), write(S),nl,
               %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
               write('Tempo: '), writeTempo(Q), nl,
-              write('Lucro: '), writeLucro(Q),nl, fail.
+	      writeLucro(Q,R), write('Lucro: '), write(R), write('euros'), fail.
+         
 
 	      
 writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
