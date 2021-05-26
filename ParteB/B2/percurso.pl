@@ -5,12 +5,12 @@
 :- use_module(library(theme/dark)).
 
 
-%entrega(Cliente, Lucro)
-entrega(cliente1, 5).
-entrega(cliente2, 6).
-entrega(cliente3, 7).
-entrega(cliente4, 9).
-entrega(cliente5, 10).
+%lucro(Cliente, Lucro)
+lucro(cliente1, 5).
+lucro(cliente2, 6).
+lucro(cliente3, 7).
+lucro(cliente4, 9).
+lucro(cliente5, 10).
 
 %percurso(Origem, Destino, DistanciaEmMin)
 percurso(restaurante, cliente1, 5).
