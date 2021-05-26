@@ -6,7 +6,7 @@ restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
-initial(sol([E,E2],[R])):- restaurant(R,LE,_), random_member(E,LE), random_member(E2,LE), E\==E2. % initial destination
+initial(sol([E,E2],[R])):- restaurant(R,LE,_), random_member(E,LE), random_member(E2,LE), E2\==E. % initial destination
 
 goal(sol([E,E2],LC)):- member(E,LC), member(E2,LC), last(LC,E2). % last destination
 
@@ -42,7 +42,7 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      write('Metodo:'),write(Method),writepar(Par),nl,
 	      last(S,Q), nl,
               write('Entregar para:'),writeEntrega(Q),nl,
-              write('Solucao:'),write(S),nl,
+              write('Solucao:'), last(S,L), write(L),nl,
 	      %length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Tempo de percurso:'), writeTempo(Q), nl,
 	      write('Lucro:'), writeLucro(Q), write('euros'), fail.
