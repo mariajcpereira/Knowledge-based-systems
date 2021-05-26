@@ -34,11 +34,11 @@ resultado(Metodo) :-
     (Metodo == 'hillclimbing', restaurant(_,LE,_), random_member(E,LE), nl,write('Entregar para:'),write(E),nl,nl, demo(restaurante, E,_)).
 
 % retorna um caminho possivel entre a Origem e o Destino selecionados
-caminho(X,Z,C):-caminho(X,Z,[X],C).
-caminho(X,X,Caminho,Caminho).
-caminho(X,Z,Percorrido,Caminho) :- percurso(X,Y,_),
+percursoPercorrido(X,Z,C):-percursoPercorrido(X,Z,[X],C).
+percursoPercorrido(X,X,Percurso,Percurso).
+percursoPercorrido(X,Z,Percorrido,Percurso) :- percurso(X,Y,_),
     \+ member(Y,Percorrido), append(Percorrido, [Y], Percorrido2),
-    caminho(Y,Z, Percorrido2,Caminho).
+    caminho(Y,Z, Percorrido2,Percurso).
 
 % verifica qual é a distancia total do caminho atual
 distancia_total([_],0).
