@@ -1,6 +1,8 @@
 :-[search, percurso2].
 
-inicio:- nl,nl ,write('*********************************************************************************************************'), nl,
+:- use_module(library(theme/dark)).
+
+inicio:- nl,nl ,write('********************************************************************************************************+******************'), nl,
 				write('                                                                                                          '), nl,			 
 				write('                   ACONSELHAMENTO DE TRAJETO PARA ENTREGA DE UMA REFEICAO 				'), nl,              
 				write('                                                                                                          '), nl,			 
