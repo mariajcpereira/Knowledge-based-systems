@@ -47,23 +47,6 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      write('Tempo de percurso:'), writeTempo(Q), nl,
 	      write('Lucro:'), writeLucro(Q), write('euros'), fail.
 	      
-	      /*run(Method):- search(Method,Par,S),
-              writepar(Par),
-              last(S,Q),nl, write('Cliente: '), writeEntrega(Q),nl,
-              write('Caminho: '), write(S),nl,
-              %length(S,N),N1 is N-1,write('Tamanho:'),write(N1),nl,
-              write('Tempo: '), writeTempo(Q), nl,
-	      write('Lucro: '), writeLucro(Q), write('euros'), fail.*/
-         
-
-	      
-
-
-%writePercurso(sol(_,LC)):- write(LC).
-
-	      
-	      
-	      
 % write parameter (if any):
 writepar(X):- integer(X),write(' par:'),write(X). % write X
 writepar(_). % do not write X
