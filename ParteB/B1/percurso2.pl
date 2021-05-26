@@ -32,7 +32,7 @@ run(Method):- search(Method,Par,S), nl, nl,
 	      write('Metodo:'),write(Method),writepar(Par),nl,
 	      last(S,Q), nl,
               write('Entregar para:'),writeEntrega(Q),nl,
-              write('Solucao:'),writePercurso(S),nl,
+              write('Solucao:'),write(S),nl,
 	      %length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Lucro:'), writeLucro(Q), nl, 
 	      write('Tempo de percurso:'), writeTempo(Q).
