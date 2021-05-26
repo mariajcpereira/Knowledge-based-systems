@@ -1,5 +1,7 @@
 :-[search, basedados], dynamic(goal/1).
 
+:- use_module(library(theme/dark)).
+
 restaurant(restaurante, [cliente1, cliente2, cliente3, cliente4, cliente5],[5,6,7,9,10]).
 
 % -- database:
