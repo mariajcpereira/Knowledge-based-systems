@@ -3,7 +3,8 @@
 % the goal is to classify refeicoes
 
 % input variables: pass all of them to recommendation2.pl file:
-attribute(categoria, [portuguesa, churrasco, hamburgueres, sanduiches, japonesa, sushi, pizza, italiana, saudavel, mexicana]).
+attribute(categoria, [portuguesa, churrasco, hamburgueres, sanduiches, 
+	japonesa, sushi, pizza, italiana, saudavel, mexicana]).
 attribute(custo_medio, [acessivel, medio, caro]).
 attribute(takeaway, [sim, nao]).
 attribute(entrega, [sim, nao]).
