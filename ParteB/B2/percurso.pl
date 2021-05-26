@@ -38,7 +38,7 @@ percursoPercorrido(X,Z,C):-percursoPercorrido(X,Z,[X],C).
 percursoPercorrido(X,X,Percurso,Percurso).
 percursoPercorrido(X,Z,Percorrido,Percurso) :- percurso(X,Y,_),
     \+ member(Y,Percorrido), append(Percorrido, [Y], Percorrido2),
-    caminho(Y,Z, Percorrido2,Percurso).
+    percursoPercorrido(Y,Z, Percorrido2,Percurso).
 
 % verifica qual é a distancia total do caminho atual
 distancia_total([_],0).
