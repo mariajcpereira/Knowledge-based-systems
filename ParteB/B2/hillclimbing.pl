@@ -5,10 +5,10 @@
 eval(C,D) :- distancia_total(C,D).
 
 % verifica se existe outro caminho possivel
-change(X,Y, SNEW):- findall(C, caminho(X,Y,C),L),length(L,LE),random(0,LE,R),nth0(R,L,SNEW).
+change(X,Y, SNEW):- findall(C, percursoPercorrido(X,Y,C),L),length(L,LE),random(0,LE,R),nth0(R,L,SNEW).
 
 % determina um caminho inicial e inicia o metodo hillclimbling com 20 iterações
-demo(X,Y,C):- caminho(X,Y,Caminho), hill_climbing(X,Y,Caminho,[20,20,0,min],_),write(C),!.
+demo(X,Y,C):- percursoPercorrido(X,Y,Percurso), hill_climbing(X,Y,Percurso,[20,20,0,min],_),write(C),!.
 
 % internal auxiliary rules, used to update hbest_sofar:
 update_hbest(S,E,Opt):-	hbest_sofar(SB,EB),
