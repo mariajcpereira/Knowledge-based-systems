@@ -1,4 +1,4 @@
-% adaptado do orginial fornecido pelo docente Paulo Cortez
+%Paulo Cortez
 :- dynamic(hbest_sofar/2).
 
 % retorna a distancia do caminho atual
