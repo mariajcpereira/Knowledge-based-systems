@@ -4,7 +4,7 @@
 % C - Caminho a Percorrer
 % D - Distancia
 
-processo(X,Y) :- percursoPercurrido(X,Y,C), 
+processo(X,Y) :- percursoPercorrido(X,Y,C), 
     mais_rapido(X,Y,C).
 
 % percorre todos os caminho possiveis e verifica se existe algum caminho com menor tempo de entrega que o atual, 
@@ -14,6 +14,6 @@ mais_rapido(X,Y,C) :- distancia_total(C,D),!,
 
 
 % verifica se existe algum caminho com menor tempo que o atual
-existe_mais_rapido(X,Y,D) :- percursoPercurrido(X,Y,C1),
+existe_mais_rapido(X,Y,D) :- percursoPercorrido(X,Y,C1),
     distancia_total(C1,D1), 
     D>D1.
