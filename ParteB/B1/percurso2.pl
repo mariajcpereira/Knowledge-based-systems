@@ -20,6 +20,9 @@ eval([Cliente1,Cliente2|R],DS):-
 	eval([Cliente2|R],DR),
 	DS is D+DR.
 
+writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
+
+writeEntrega(sol(LE,_)):- write(LE).
 
 
 % execute and show a search method result:
@@ -35,7 +38,7 @@ run(Method):- search(Method,Par,S), nl, nl,
               write('Solucao:'),write(S),nl,
 	      %length(S,N),N1 is N-1,write('Percurso:'),write(N1),nl,
 	      write('Lucro:'), writeLucro(Q), nl, 
-	      write('Tempo de percurso:'), writeTempo(Q).
+	      write('Tempo de percurso:'), writeTempo(Q), fail.
 	      
 	      /*run(Method):- search(Method,Par,S),
               writepar(Par),
@@ -47,9 +50,7 @@ run(Method):- search(Method,Par,S), nl, nl,
          
 
 	      
-writeTempo(sol(_,LC)):- eval(LC,D), D2 is D+1,write(D2).
 
-writeEntrega(sol(LE,_)):- write(LE).
 
 %writePercurso(sol(_,LC)):- write(LC).
 
